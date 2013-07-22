@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset=utf-8 />
+	<title>ColorBox Examples</title>
+	<style type="text/css">
+		body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+		a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+		h2{font-size:13px; margin:15px 0 0 0;}
+	</style>
+	<link media="screen" rel="stylesheet" href="colorbox.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="http://localhost/colorbox/colorbox/jquery.colorbox.js"></script>
+	<script>
+		$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			
+			
+					$.ajax({ 
+							type: "GET",
+							 async: false,
+							url: "modales.html",
+							success: function(datos){ 
+							
+							$("#modales").html(datos);
+ 							 
+							}
+						 });
+			
+ 			
+			
+		var hijos=$("#modales > div ").size();	
+		var hijosMOdal=0;
+		
+	console.log(hijos+"_MOdales")
+		
+		for(var i=1;i<=hijos;i++)
+		{
+		  hijosMOdal=$("#mod"+i+" > a ").size();	
+		  
+			  
+			  $("a[rel='item"+i+"']").colorbox();
+		}
+			
+  		 
+ 		});
+	</script>
+</head>
+<body>
+	<h1>ColorBox Demonstration</h1>
+	
+	<h2>Elastic Transition</h2>
+<a href="../content/ohoopee1.jpg" rel="item1" title="Me and my grandfather on the Ohoopee."><img </a><br>    
+<a href="../content/n.jpg" rel="item2" title="On the Ohoopee as a child">Grouped Photo 2</a>    
+    
+    
+    
+    
+   <div id="modales" style="display:none"></div> 
+    
+    
+    
+    
+ </body>
+</html>

@@ -1,0 +1,36 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+full_version:
+  url:    /full-version
+  param:  { module: home, action: fullVersion }
+  
+send_promo_code:
+  url:    /send-promo-code
+  param:  { module: home, action: sendPromoCode }
+  
+send_tweet:
+  url:    /send_tweet
+  param:  { module: tweet, action: send }
+  
+twitter_signin:
+  url:    /twitter-signin
+  param:  { module: sfGuardAuth, action: twitterSignin }
+  
+participate:
+  url:    /participar
+  param:  { module: home, action: participate }
+    
+# default rules
+homepage:
+  url:    /
+  param:  { module: home, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+#default_index:
+#  url:   /:module
+#  param: { action: index }
+#
+#default:
+#  url:   /:module/:action/*

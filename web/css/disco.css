@@ -1,0 +1,1817 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,center{margin:0;padding:0;border:0;outline:0;font-weight:normal;font-style:normal;font-size:100%;font-family:inherit}body{line-height:1}:focus{outline:0}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:""""}input,textarea{margin:0;padding:0}hr{margin:0;padding:0;border:0;color:#000;background-color:#000;height:1px}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}.clearfix {display:inline-block;}* html .clearfix {height:1%;}.clearfix {display:block;}
+
+body { background:#000 url(../images/bg2.jpg) no-repeat top center; margin:0; font-family:Arial, Helvetica, sans-serif; font-size:14px;}
+.header { width:960px; margin:0px auto;}
+a.btn_participar { background: url(../images/participar.png) no-repeat; display:block; width:289px; height:125px; text-indent:-9999px; float:right; margin:50px 50px 0 0;}
+a.btn_participar:hover { background:url(../images/participar_a.png)}
+a.btn_trans { position:absolute; float:left; text-indent:-9999px; height:100px; width:250px; margin:45px 0 0 70px;}
+
+
+.container { padding-top:180px;}
+.disc { width:1000px; height:1000px; background:url(../images/disc_grey.jpg) no-repeat; margin:0px auto; box-shadow:10px 10px 30px #000;}
+
+
+ul li.avatar { width:25px; height:25px;position:relative; float:left; display:block; }
+ul li.avatar span { width:25px; height:25px;}
+ul li.avatar span img { width:100%; height:100%; opacity:0.2;-moz-opacity:0.2;-ms-opacity:0.2;-o-opacity:0.2;-webkit-opacity:0.2;filter: grayscale(80%);-webkit-filter: grayscale(80%);-moz-filter: grayscale(80%);-ms-filter: grayscale(80%);-o-filter: grayscale(80%);}
+ul li.avatar span .user { display:none;}
+
+ul li.avatar:hover span { width:80px; height:80px; position:absolute; float:left; z-index:100; border:solid 1px #fff; box-shadow:5px 5px 10px #000; margin:-65px 0 0 -65px;}
+ul li.avatar:hover span img { width:100%; height:100%; opacity:1;-webkit-filter: grayscale(0%); }
+ul li.avatar:hover a span .user { display:block;width:100px; height:60px; background:#fff; padding:10px; position:absolute; float: left; margin:-80px 0 0 80px; color: #903; font-weight:bold;}
+ul li.avatar:hover a span .user p { font-size:11px; color:#999; padding-top:10px;}
+
+/*    FILA 1   */
+
+.bg01 { background:url(../images/disc_color.jpg) no-repeat !important}
+.bg02 { background:url(../images/disc_color.jpg) no-repeat -25px 0 !important}
+.bg03 { background:url(../images/disc_color.jpg) no-repeat -50px 0!important}
+.bg04 { background:url(../images/disc_color.jpg) no-repeat -75px 0!important}
+.bg05 { background:url(../images/disc_color.jpg) no-repeat -100px 0!important}
+.bg06 { background:url(../images/disc_color.jpg) no-repeat -125px 0!important}
+.bg07 { background:url(../images/disc_color.jpg) no-repeat -150px 0!important}
+.bg08 { background:url(../images/disc_color.jpg) no-repeat -175px 0!important}
+.bg09 { background:url(../images/disc_color.jpg) no-repeat -200px 0!important}
+.bg10 { background:url(../images/disc_color.jpg) no-repeat -225px 0!important}
+.bg11 { background:url(../images/disc_color.jpg) no-repeat -250px 0!important}
+.bg12 { background:url(../images/disc_color.jpg) no-repeat -275px 0!important}
+.bg13 { background:url(../images/disc_color.jpg) no-repeat -300px 0!important}
+.bg14 { background:url(../images/disc_color.jpg) no-repeat -325px 0!important}
+.bg15 { background:url(../images/disc_color.jpg) no-repeat -350px 0!important}
+.bg16 { background:url(../images/disc_color.jpg) no-repeat -375px 0!important}
+.bg17 { background:url(../images/disc_color.jpg) no-repeat -400px 0!important}
+.bg18 { background:url(../images/disc_color.jpg) no-repeat -425px 0!important}
+.bg19 { background:url(../images/disc_color.jpg) no-repeat -450px 0!important}
+.bg20 { background:url(../images/disc_color.jpg) no-repeat -475px 0!important}
+.bg21 { background:url(../images/disc_color.jpg) no-repeat -500px 0!important}
+.bg22 { background:url(../images/disc_color.jpg) no-repeat -525px 0!important}
+.bg23 { background:url(../images/disc_color.jpg) no-repeat -550px 0!important}
+.bg24 { background:url(../images/disc_color.jpg) no-repeat -575px 0!important}
+.bg25 { background:url(../images/disc_color.jpg) no-repeat -600px 0!important}
+.bg26 { background:url(../images/disc_color.jpg) no-repeat -625px 0!important}
+.bg27 { background:url(../images/disc_color.jpg) no-repeat -650px 0!important}
+.bg28 { background:url(../images/disc_color.jpg) no-repeat -675px 0!important}
+.bg29 { background:url(../images/disc_color.jpg) no-repeat -700px 0!important}
+.bg30 { background:url(../images/disc_color.jpg) no-repeat -725px 0!important}
+.bg31 { background:url(../images/disc_color.jpg) no-repeat -750px 0!important}
+.bg32 { background:url(../images/disc_color.jpg) no-repeat -775px 0!important}
+.bg33 { background:url(../images/disc_color.jpg) no-repeat -800px 0!important}
+.bg34 { background:url(../images/disc_color.jpg) no-repeat -825px 0!important}
+.bg35 { background:url(../images/disc_color.jpg) no-repeat -850px 0!important}
+.bg36 { background:url(../images/disc_color.jpg) no-repeat -875px 0!important}
+.bg37 { background:url(../images/disc_color.jpg) no-repeat -900px 0!important}
+.bg38 { background:url(../images/disc_color.jpg) no-repeat -925px 0!important}
+.bg39 { background:url(../images/disc_color.jpg) no-repeat -950px 0!important}
+.bg40 { background:url(../images/disc_color.jpg) no-repeat -975px 0!important}
+
+
+/*    FILA 2  */
+
+
+.bg41 { background:url(../images/disc_color.jpg) no-repeat 0 -25px!important}
+.bg42 { background:url(../images/disc_color.jpg) no-repeat -25px -25px !important}
+.bg43 { background:url(../images/disc_color.jpg) no-repeat -50px -25px!important}
+.bg44 { background:url(../images/disc_color.jpg) no-repeat -75px -25px!important}
+.bg45 { background:url(../images/disc_color.jpg) no-repeat -100px -25px!important}
+.bg46 { background:url(../images/disc_color.jpg) no-repeat -125px -25px!important}
+.bg47 { background:url(../images/disc_color.jpg) no-repeat -150px -25px!important}
+.bg48 { background:url(../images/disc_color.jpg) no-repeat -175px -25px!important}
+.bg49 { background:url(../images/disc_color.jpg) no-repeat -200px -25px!important}
+.bg50 { background:url(../images/disc_color.jpg) no-repeat -225px -25px!important}
+.bg51 { background:url(../images/disc_color.jpg) no-repeat -250px -25px!important}
+.bg52 { background:url(../images/disc_color.jpg) no-repeat -275px -25px!important}
+.bg53 { background:url(../images/disc_color.jpg) no-repeat -300px -25px!important}
+.bg54 { background:url(../images/disc_color.jpg) no-repeat -325px -25px!important}
+.bg55 { background:url(../images/disc_color.jpg) no-repeat -350px -25px!important}
+.bg56 { background:url(../images/disc_color.jpg) no-repeat -375px -25px!important}
+.bg57 { background:url(../images/disc_color.jpg) no-repeat -400px -25px!important}
+.bg58 { background:url(../images/disc_color.jpg) no-repeat -425px -25px!important}
+.bg59 { background:url(../images/disc_color.jpg) no-repeat -450px -25px!important}
+.bg60 { background:url(../images/disc_color.jpg) no-repeat -475px -25px!important}
+.bg61 { background:url(../images/disc_color.jpg) no-repeat -500px -25px!important}
+.bg62 { background:url(../images/disc_color.jpg) no-repeat -525px -25px!important}
+.bg63 { background:url(../images/disc_color.jpg) no-repeat -550px -25px!important}
+.bg64 { background:url(../images/disc_color.jpg) no-repeat -575px -25px!important}
+.bg65 { background:url(../images/disc_color.jpg) no-repeat -600px -25px!important}
+.bg66 { background:url(../images/disc_color.jpg) no-repeat -625px -25px!important}
+.bg67 { background:url(../images/disc_color.jpg) no-repeat -650px -25px!important}
+.bg68 { background:url(../images/disc_color.jpg) no-repeat -675px -25px!important}
+.bg69 { background:url(../images/disc_color.jpg) no-repeat -700px -25px!important}
+.bg70 { background:url(../images/disc_color.jpg) no-repeat -725px -25px!important}
+.bg71 { background:url(../images/disc_color.jpg) no-repeat -750px -25px!important}
+.bg72 { background:url(../images/disc_color.jpg) no-repeat -775px -25px!important}
+.bg73 { background:url(../images/disc_color.jpg) no-repeat -800px -25px!important}
+.bg74 { background:url(../images/disc_color.jpg) no-repeat -825px -25px!important}
+.bg75 { background:url(../images/disc_color.jpg) no-repeat -850px -25px!important}
+.bg76 { background:url(../images/disc_color.jpg) no-repeat -875px -25px!important}
+.bg77 { background:url(../images/disc_color.jpg) no-repeat -900px -25px!important}
+.bg78 { background:url(../images/disc_color.jpg) no-repeat -925px -25px!important}
+.bg79 { background:url(../images/disc_color.jpg) no-repeat -950px -25px!important}
+.bg80 { background:url(../images/disc_color.jpg) no-repeat -975px -25px!important}
+
+
+/*    FILA 3   */
+
+
+.bg81 { background:url(../images/disc_color.jpg) no-repeat 0 -50px!important}
+.bg82 { background:url(../images/disc_color.jpg) no-repeat -25px -50px !important}
+.bg83 { background:url(../images/disc_color.jpg) no-repeat -50px -50px!important}
+.bg84 { background:url(../images/disc_color.jpg) no-repeat -75px -50px!important}
+.bg85 { background:url(../images/disc_color.jpg) no-repeat -100px -50px!important}
+.bg86 { background:url(../images/disc_color.jpg) no-repeat -125px -50px!important}
+.bg87 { background:url(../images/disc_color.jpg) no-repeat -150px -50px!important}
+.bg88 { background:url(../images/disc_color.jpg) no-repeat -175px -50px!important}
+.bg89 { background:url(../images/disc_color.jpg) no-repeat -200px -50px!important}
+.bg90 { background:url(../images/disc_color.jpg) no-repeat -225px -50px!important}
+.bg91 { background:url(../images/disc_color.jpg) no-repeat -250px -50px!important}
+.bg92 { background:url(../images/disc_color.jpg) no-repeat -275px -50px!important}
+.bg93 { background:url(../images/disc_color.jpg) no-repeat -300px -50px!important}
+.bg94 { background:url(../images/disc_color.jpg) no-repeat -325px -50px!important}
+.bg95 { background:url(../images/disc_color.jpg) no-repeat -350px -50px!important}
+.bg96 { background:url(../images/disc_color.jpg) no-repeat -375px -50px!important}
+.bg97 { background:url(../images/disc_color.jpg) no-repeat -400px -50px!important}
+.bg98 { background:url(../images/disc_color.jpg) no-repeat -425px -50px!important}
+.bg99 { background:url(../images/disc_color.jpg) no-repeat -450px -50px!important}
+.bg100 { background:url(../images/disc_color.jpg) no-repeat -475px -50px!important}
+.bg101 { background:url(../images/disc_color.jpg) no-repeat -500px -50px!important}
+.bg102 { background:url(../images/disc_color.jpg) no-repeat -525px -50px!important}
+.bg103 { background:url(../images/disc_color.jpg) no-repeat -550px -50px!important}
+.bg104 { background:url(../images/disc_color.jpg) no-repeat -575px -50px!important}
+.bg105 { background:url(../images/disc_color.jpg) no-repeat -600px -50px!important}
+.bg106 { background:url(../images/disc_color.jpg) no-repeat -625px -50px!important}
+.bg107 { background:url(../images/disc_color.jpg) no-repeat -650px -50px!important}
+.bg108 { background:url(../images/disc_color.jpg) no-repeat -675px -50px!important}
+.bg109 { background:url(../images/disc_color.jpg) no-repeat -700px -50px!important}
+.bg110 { background:url(../images/disc_color.jpg) no-repeat -725px -50px!important}
+.bg111 { background:url(../images/disc_color.jpg) no-repeat -750px -50px!important}
+.bg112 { background:url(../images/disc_color.jpg) no-repeat -775px -50px!important}
+.bg113 { background:url(../images/disc_color.jpg) no-repeat -800px -50px!important}
+.bg114 { background:url(../images/disc_color.jpg) no-repeat -825px -50px!important}
+.bg115 { background:url(../images/disc_color.jpg) no-repeat -850px -50px!important}
+.bg116 { background:url(../images/disc_color.jpg) no-repeat -875px -50px!important}
+.bg117 { background:url(../images/disc_color.jpg) no-repeat -900px -50px!important}
+.bg118 { background:url(../images/disc_color.jpg) no-repeat -925px -50px!important}
+.bg119 { background:url(../images/disc_color.jpg) no-repeat -950px -50px!important}
+.bg120 { background:url(../images/disc_color.jpg) no-repeat -975px -50px!important}
+
+/*    FILA 4   */
+
+.bg121 { background:url(../images/disc_color.jpg) no-repeat 0 -75px!important}
+.bg122 { background:url(../images/disc_color.jpg) no-repeat -25px -75px!important}
+.bg123 { background:url(../images/disc_color.jpg) no-repeat -50px -75px!important}
+.bg124 { background:url(../images/disc_color.jpg) no-repeat -75px -75px!important}
+.bg125 { background:url(../images/disc_color.jpg) no-repeat -100px -75px!important}
+.bg126 { background:url(../images/disc_color.jpg) no-repeat -125px -75px!important}
+.bg127 { background:url(../images/disc_color.jpg) no-repeat -150px -75px!important}
+.bg128 { background:url(../images/disc_color.jpg) no-repeat -175px -75px!important}
+.bg129 { background:url(../images/disc_color.jpg) no-repeat -200px -75px!important}
+.bg130 { background:url(../images/disc_color.jpg) no-repeat -225px -75px!important}
+.bg131 { background:url(../images/disc_color.jpg) no-repeat -250px -75px!important}
+.bg132 { background:url(../images/disc_color.jpg) no-repeat -275px -75px!important}
+.bg133 { background:url(../images/disc_color.jpg) no-repeat -300px -75px!important}
+.bg134 { background:url(../images/disc_color.jpg) no-repeat -325px -75px!important}
+.bg135 { background:url(../images/disc_color.jpg) no-repeat -350px -75px!important}
+.bg136 { background:url(../images/disc_color.jpg) no-repeat -375px -75px!important}
+.bg137 { background:url(../images/disc_color.jpg) no-repeat -400px -75px!important}
+.bg138 { background:url(../images/disc_color.jpg) no-repeat -425px -75px!important}
+.bg139 { background:url(../images/disc_color.jpg) no-repeat -450px -75px!important}
+.bg140 { background:url(../images/disc_color.jpg) no-repeat -475px -75px!important}
+.bg141 { background:url(../images/disc_color.jpg) no-repeat -500px -75px !important}
+.bg142 { background:url(../images/disc_color.jpg) no-repeat -525px -75px !important}
+.bg143 { background:url(../images/disc_color.jpg) no-repeat -550px -75px!important}
+.bg144 { background:url(../images/disc_color.jpg) no-repeat -575px -75px!important}
+.bg145 { background:url(../images/disc_color.jpg) no-repeat -600px -75px!important}
+.bg146 { background:url(../images/disc_color.jpg) no-repeat -625px -75px!important}
+.bg147 { background:url(../images/disc_color.jpg) no-repeat -650px -75px!important}
+.bg148 { background:url(../images/disc_color.jpg) no-repeat -675px -75px!important}
+.bg149 { background:url(../images/disc_color.jpg) no-repeat -700px -75px!important}
+.bg150 { background:url(../images/disc_color.jpg) no-repeat -725px -75px!important}
+.bg151 { background:url(../images/disc_color.jpg) no-repeat -750px -75px!important}
+.bg152 { background:url(../images/disc_color.jpg) no-repeat -775px -75px!important}
+.bg153 { background:url(../images/disc_color.jpg) no-repeat -800px -75px!important}
+.bg154 { background:url(../images/disc_color.jpg) no-repeat -825px -75px!important}
+.bg155 { background:url(../images/disc_color.jpg) no-repeat -850px -75px!important}
+.bg156 { background:url(../images/disc_color.jpg) no-repeat -875px -75px!important}
+.bg157 { background:url(../images/disc_color.jpg) no-repeat -900px -75px!important}
+.bg158 { background:url(../images/disc_color.jpg) no-repeat -925px -75px!important}
+.bg159 { background:url(../images/disc_color.jpg) no-repeat -950px -75px!important}
+.bg160 { background:url(../images/disc_color.jpg) no-repeat -975px -75px!important}
+
+/*    FILA 5  */
+
+.bg161 { background:url(../images/disc_color.jpg) no-repeat 0 -100px!important}
+.bg162 { background:url(../images/disc_color.jpg) no-repeat -25px -100px!important}
+.bg163 { background:url(../images/disc_color.jpg) no-repeat -50px -100px!important}
+.bg164 { background:url(../images/disc_color.jpg) no-repeat -75px -100px!important}
+.bg165 { background:url(../images/disc_color.jpg) no-repeat -100px -100px!important}
+.bg166 { background:url(../images/disc_color.jpg) no-repeat -125px -100px!important}
+.bg167 { background:url(../images/disc_color.jpg) no-repeat -150px -100px!important}
+.bg168 { background:url(../images/disc_color.jpg) no-repeat -175px -100px!important}
+.bg169 { background:url(../images/disc_color.jpg) no-repeat -200px -100px!important}
+.bg170 { background:url(../images/disc_color.jpg) no-repeat -225px -100px!important}
+.bg171 { background:url(../images/disc_color.jpg) no-repeat -250px -100px!important}
+.bg172 { background:url(../images/disc_color.jpg) no-repeat -275px -100px!important}
+.bg173 { background:url(../images/disc_color.jpg) no-repeat -300px -100px!important}
+.bg174 { background:url(../images/disc_color.jpg) no-repeat -325px -100px!important}
+.bg175 { background:url(../images/disc_color.jpg) no-repeat -350px -100px!important}
+.bg176 { background:url(../images/disc_color.jpg) no-repeat -375px -100px!important}
+.bg177 { background:url(../images/disc_color.jpg) no-repeat -400px -100px!important}
+.bg178 { background:url(../images/disc_color.jpg) no-repeat -425px -100px!important}
+.bg179 { background:url(../images/disc_color.jpg) no-repeat -450px -100px!important}
+.bg180 { background:url(../images/disc_color.jpg) no-repeat -475px -100px!important}
+.bg181 { background:url(../images/disc_color.jpg) no-repeat -500px -100px!important}
+.bg182 { background:url(../images/disc_color.jpg) no-repeat -525px -100px!important}
+.bg183 { background:url(../images/disc_color.jpg) no-repeat -550px -100px!important}
+.bg184 { background:url(../images/disc_color.jpg) no-repeat -575px -100px!important}
+.bg185 { background:url(../images/disc_color.jpg) no-repeat -600px -100px!important}
+.bg186 { background:url(../images/disc_color.jpg) no-repeat -625px -100px!important}
+.bg187 { background:url(../images/disc_color.jpg) no-repeat -650px -100px!important}
+.bg188 { background:url(../images/disc_color.jpg) no-repeat -675px -100px!important}
+.bg189 { background:url(../images/disc_color.jpg) no-repeat -700px -100px!important}
+.bg190 { background:url(../images/disc_color.jpg) no-repeat -725px -100px!important}
+.bg191 { background:url(../images/disc_color.jpg) no-repeat -750px -100px!important}
+.bg192 { background:url(../images/disc_color.jpg) no-repeat -775px -100px!important}
+.bg193 { background:url(../images/disc_color.jpg) no-repeat -800px -100px!important}
+.bg194 { background:url(../images/disc_color.jpg) no-repeat -825px -100px!important}
+.bg195 { background:url(../images/disc_color.jpg) no-repeat -850px -100px!important}
+.bg196 { background:url(../images/disc_color.jpg) no-repeat -875px -100px!important}
+.bg197 { background:url(../images/disc_color.jpg) no-repeat -900px -100px!important}
+.bg198 { background:url(../images/disc_color.jpg) no-repeat -925px -100px!important}
+.bg199 { background:url(../images/disc_color.jpg) no-repeat -950px -100px!important}
+.bg200 { background:url(../images/disc_color.jpg) no-repeat -975px -100px!important}
+
+/*    FILA 6  */
+
+.bg201 { background:url(../images/disc_color.jpg) no-repeat 0 -125px !important}
+.bg202 { background:url(../images/disc_color.jpg) no-repeat -25px -125px !important}
+.bg203 { background:url(../images/disc_color.jpg) no-repeat -50px -125px !important}
+.bg204 { background:url(../images/disc_color.jpg) no-repeat -75px -125px!important}
+.bg205 { background:url(../images/disc_color.jpg) no-repeat -100px -125px!important}
+.bg206 { background:url(../images/disc_color.jpg) no-repeat -125px -125px!important}
+.bg207 { background:url(../images/disc_color.jpg) no-repeat -150px -125px!important}
+.bg208 { background:url(../images/disc_color.jpg) no-repeat -175px -125px!important}
+.bg209 { background:url(../images/disc_color.jpg) no-repeat -200px -125px!important}
+.bg210 { background:url(../images/disc_color.jpg) no-repeat -225px -125px!important}
+.bg211 { background:url(../images/disc_color.jpg) no-repeat -250px -125px!important}
+.bg212 { background:url(../images/disc_color.jpg) no-repeat -275px -125px!important}
+.bg213 { background:url(../images/disc_color.jpg) no-repeat -300px -125px!important}
+.bg214 { background:url(../images/disc_color.jpg) no-repeat -325px -125px!important}
+.bg215 { background:url(../images/disc_color.jpg) no-repeat -350px -125px!important}
+.bg216 { background:url(../images/disc_color.jpg) no-repeat -375px -125px!important}
+.bg217 { background:url(../images/disc_color.jpg) no-repeat -400px -125px!important}
+.bg218 { background:url(../images/disc_color.jpg) no-repeat -425px -125px!important}
+.bg219 { background:url(../images/disc_color.jpg) no-repeat -450px -125px!important}
+.bg220 { background:url(../images/disc_color.jpg) no-repeat -475px -125px!important}
+.bg221 { background:url(../images/disc_color.jpg) no-repeat -500px -125px!important}
+.bg222 { background:url(../images/disc_color.jpg) no-repeat -525px -125px!important}
+.bg223 { background:url(../images/disc_color.jpg) no-repeat -550px -125px!important}
+.bg224 { background:url(../images/disc_color.jpg) no-repeat -575px -125px!important}
+.bg225 { background:url(../images/disc_color.jpg) no-repeat -600px -125px!important}
+.bg226 { background:url(../images/disc_color.jpg) no-repeat -625px -125px!important}
+.bg227 { background:url(../images/disc_color.jpg) no-repeat -650px -125px!important}
+.bg228 { background:url(../images/disc_color.jpg) no-repeat -675px -125px!important}
+.bg229 { background:url(../images/disc_color.jpg) no-repeat -700px -125px!important}
+.bg230 { background:url(../images/disc_color.jpg) no-repeat -725px -125px!important}
+.bg231 { background:url(../images/disc_color.jpg) no-repeat -750px -125px!important}
+.bg232 { background:url(../images/disc_color.jpg) no-repeat -775px -125px!important}
+.bg233 { background:url(../images/disc_color.jpg) no-repeat -800px -125px!important}
+.bg234 { background:url(../images/disc_color.jpg) no-repeat -825px -125px!important}
+.bg235 { background:url(../images/disc_color.jpg) no-repeat -850px -125px!important}
+.bg236 { background:url(../images/disc_color.jpg) no-repeat -875px -125px!important}
+.bg237 { background:url(../images/disc_color.jpg) no-repeat -900px -125px!important}
+.bg238 { background:url(../images/disc_color.jpg) no-repeat -925px -125px!important}
+.bg239 { background:url(../images/disc_color.jpg) no-repeat -950px -125px!important}
+.bg240 { background:url(../images/disc_color.jpg) no-repeat -975px -125px!important}
+
+
+/*    FILA 7  */
+
+.bg241 { background:url(../images/disc_color.jpg) no-repeat 0 -150px!important}
+.bg242 { background:url(../images/disc_color.jpg) no-repeat -25px -150px!important}
+.bg243 { background:url(../images/disc_color.jpg) no-repeat -50px -150px!important}
+.bg244 { background:url(../images/disc_color.jpg) no-repeat -75px -150px!important}
+.bg245 { background:url(../images/disc_color.jpg) no-repeat -100px -150px!important}
+.bg246 { background:url(../images/disc_color.jpg) no-repeat -125px -150px!important}
+.bg247 { background:url(../images/disc_color.jpg) no-repeat -150px -150px!important}
+.bg248 { background:url(../images/disc_color.jpg) no-repeat -175px -150px!important}
+.bg249 { background:url(../images/disc_color.jpg) no-repeat -200px -150px!important}
+.bg250 { background:url(../images/disc_color.jpg) no-repeat -225px -150px!important}
+.bg251 { background:url(../images/disc_color.jpg) no-repeat -250px -150px!important}
+.bg252 { background:url(../images/disc_color.jpg) no-repeat -275px -150px!important}
+.bg253 { background:url(../images/disc_color.jpg) no-repeat -300px -150px!important}
+.bg254 { background:url(../images/disc_color.jpg) no-repeat -325px -150px!important}
+.bg255 { background:url(../images/disc_color.jpg) no-repeat -350px -150px!important}
+.bg256 { background:url(../images/disc_color.jpg) no-repeat -375px -150px!important}
+.bg257 { background:url(../images/disc_color.jpg) no-repeat -400px -150px!important}
+.bg258 { background:url(../images/disc_color.jpg) no-repeat -425px -150px!important}
+.bg259 { background:url(../images/disc_color.jpg) no-repeat -450px -150px!important}
+.bg260 { background:url(../images/disc_color.jpg) no-repeat -475px -150px!important}
+.bg261 { background:url(../images/disc_color.jpg) no-repeat -500px -150px!important}
+.bg262 { background:url(../images/disc_color.jpg) no-repeat -525px -150px !important}
+.bg263 { background:url(../images/disc_color.jpg) no-repeat -550px -150px!important}
+.bg264 { background:url(../images/disc_color.jpg) no-repeat -575px -150px!important}
+.bg265 { background:url(../images/disc_color.jpg) no-repeat -600px -150px!important}
+.bg266 { background:url(../images/disc_color.jpg) no-repeat -625px -150px!important}
+.bg267 { background:url(../images/disc_color.jpg) no-repeat -650px -150px!important}
+.bg268 { background:url(../images/disc_color.jpg) no-repeat -675px -150px!important}
+.bg269 { background:url(../images/disc_color.jpg) no-repeat -700px -150px!important}
+.bg270 { background:url(../images/disc_color.jpg) no-repeat -725px -150px!important}
+.bg271 { background:url(../images/disc_color.jpg) no-repeat -750px -150px!important}
+.bg272 { background:url(../images/disc_color.jpg) no-repeat -775px -150px!important}
+.bg273 { background:url(../images/disc_color.jpg) no-repeat -800px -150px!important}
+.bg274 { background:url(../images/disc_color.jpg) no-repeat -825px -150px!important}
+.bg275 { background:url(../images/disc_color.jpg) no-repeat -850px -150px!important}
+.bg276 { background:url(../images/disc_color.jpg) no-repeat -875px -150px!important}
+.bg277 { background:url(../images/disc_color.jpg) no-repeat -900px -150px!important}
+.bg278 { background:url(../images/disc_color.jpg) no-repeat -925px -150px!important}
+.bg279 { background:url(../images/disc_color.jpg) no-repeat -950px -150px!important}
+.bg280 { background:url(../images/disc_color.jpg) no-repeat -975px -150px!important}
+
+/*    FILA 8  */
+
+.bg281 { background:url(../images/disc_color.jpg) no-repeat 0 -175px!important}
+.bg282 { background:url(../images/disc_color.jpg) no-repeat -25px -175px!important}
+.bg283 { background:url(../images/disc_color.jpg) no-repeat -50px -175px!important}
+.bg284 { background:url(../images/disc_color.jpg) no-repeat -75px -175px!important}
+.bg285 { background:url(../images/disc_color.jpg) no-repeat -100px -175px!important}
+.bg286 { background:url(../images/disc_color.jpg) no-repeat -125px -175px!important}
+.bg287 { background:url(../images/disc_color.jpg) no-repeat -150px -175px!important}
+.bg288 { background:url(../images/disc_color.jpg) no-repeat -175px -175px!important}
+.bg289 { background:url(../images/disc_color.jpg) no-repeat -200px -175px!important}
+.bg290 { background:url(../images/disc_color.jpg) no-repeat -225px -175px!important}
+.bg291 { background:url(../images/disc_color.jpg) no-repeat -250px -175px!important}
+.bg292 { background:url(../images/disc_color.jpg) no-repeat -275px -175px!important}
+.bg293 { background:url(../images/disc_color.jpg) no-repeat -300px -175px!important}
+.bg294 { background:url(../images/disc_color.jpg) no-repeat -325px -175px!important}
+.bg295 { background:url(../images/disc_color.jpg) no-repeat -350px -175px!important}
+.bg296 { background:url(../images/disc_color.jpg) no-repeat -375px -175px!important}
+.bg297 { background:url(../images/disc_color.jpg) no-repeat -400px -175px!important}
+.bg298 { background:url(../images/disc_color.jpg) no-repeat -425px -175px!important}
+.bg299 { background:url(../images/disc_color.jpg) no-repeat -450px -175px!important}
+.bg300 { background:url(../images/disc_color.jpg) no-repeat -475px -175px!important}
+.bg301 { background:url(../images/disc_color.jpg) no-repeat -500px -175px!important}
+.bg302 { background:url(../images/disc_color.jpg) no-repeat -525px -175px!important}
+.bg303 { background:url(../images/disc_color.jpg) no-repeat -550px -175px!important}
+.bg304 { background:url(../images/disc_color.jpg) no-repeat -575px -175px!important}
+.bg305 { background:url(../images/disc_color.jpg) no-repeat -600px -175px!important}
+.bg306 { background:url(../images/disc_color.jpg) no-repeat -625px -175px!important}
+.bg307 { background:url(../images/disc_color.jpg) no-repeat -650px -175px!important}
+.bg308 { background:url(../images/disc_color.jpg) no-repeat -675px -175px!important}
+.bg309 { background:url(../images/disc_color.jpg) no-repeat -700px -175px!important}
+.bg310 { background:url(../images/disc_color.jpg) no-repeat -725px -175px!important}
+.bg311 { background:url(../images/disc_color.jpg) no-repeat -750px -175px!important}
+.bg312 { background:url(../images/disc_color.jpg) no-repeat -775px -175px!important}
+.bg313 { background:url(../images/disc_color.jpg) no-repeat -800px -175px!important}
+.bg314 { background:url(../images/disc_color.jpg) no-repeat -825px -175px!important}
+.bg315 { background:url(../images/disc_color.jpg) no-repeat -850px -175px!important}
+.bg316 { background:url(../images/disc_color.jpg) no-repeat -875px -175px!important}
+.bg317 { background:url(../images/disc_color.jpg) no-repeat -900px -175px!important}
+.bg318 { background:url(../images/disc_color.jpg) no-repeat -925px -175px!important}
+.bg319 { background:url(../images/disc_color.jpg) no-repeat -950px -175px!important}
+.bg320 { background:url(../images/disc_color.jpg) no-repeat -975px -175px!important}
+
+
+/*    FILA 9   */
+
+
+.bg321 { background:url(../images/disc_color.jpg) no-repeat 0 -200px!important}
+.bg322 { background:url(../images/disc_color.jpg) no-repeat -25px -200px !important}
+.bg323 { background:url(../images/disc_color.jpg) no-repeat -50px -200px!important}
+.bg324 { background:url(../images/disc_color.jpg) no-repeat -75px -200px!important}
+.bg325 { background:url(../images/disc_color.jpg) no-repeat -100px -200px!important}
+.bg326 { background:url(../images/disc_color.jpg) no-repeat -125px -200px!important}
+.bg327 { background:url(../images/disc_color.jpg) no-repeat -150px -200px!important}
+.bg328 { background:url(../images/disc_color.jpg) no-repeat -175px -200px!important}
+.bg329 { background:url(../images/disc_color.jpg) no-repeat -200px -200px!important}
+.bg330 { background:url(../images/disc_color.jpg) no-repeat -225px -200px!important}
+.bg331 { background:url(../images/disc_color.jpg) no-repeat -250px -200px!important}
+.bg332 { background:url(../images/disc_color.jpg) no-repeat -275px -200px!important}
+.bg333 { background:url(../images/disc_color.jpg) no-repeat -300px -200px!important}
+.bg334 { background:url(../images/disc_color.jpg) no-repeat -325px -200px!important}
+.bg335 { background:url(../images/disc_color.jpg) no-repeat -350px -200px!important}
+.bg336 { background:url(../images/disc_color.jpg) no-repeat -375px -200px!important}
+.bg337 { background:url(../images/disc_color.jpg) no-repeat -400px -200px!important}
+.bg338 { background:url(../images/disc_color.jpg) no-repeat -425px -200px!important}
+.bg339 { background:url(../images/disc_color.jpg) no-repeat -450px -200px!important}
+.bg340 { background:url(../images/disc_color.jpg) no-repeat -475px -200px!important}
+.bg341 { background:url(../images/disc_color.jpg) no-repeat -500px -200px!important}
+.bg342 { background:url(../images/disc_color.jpg) no-repeat -525px -200px!important}
+.bg343 { background:url(../images/disc_color.jpg) no-repeat -550px -200px!important}
+.bg344 { background:url(../images/disc_color.jpg) no-repeat -575px -200px!important}
+.bg345 { background:url(../images/disc_color.jpg) no-repeat -600px -200px!important}
+.bg346 { background:url(../images/disc_color.jpg) no-repeat -625px -200px!important}
+.bg347 { background:url(../images/disc_color.jpg) no-repeat -650px -200px!important}
+.bg348 { background:url(../images/disc_color.jpg) no-repeat -675px -200px!important}
+.bg349 { background:url(../images/disc_color.jpg) no-repeat -700px -200px!important}
+.bg350 { background:url(../images/disc_color.jpg) no-repeat -725px -200px!important}
+.bg351 { background:url(../images/disc_color.jpg) no-repeat -750px -200px!important}
+.bg352 { background:url(../images/disc_color.jpg) no-repeat -775px -200px!important}
+.bg353 { background:url(../images/disc_color.jpg) no-repeat -800px -200px!important}
+.bg354 { background:url(../images/disc_color.jpg) no-repeat -825px -200px!important}
+.bg355 { background:url(../images/disc_color.jpg) no-repeat -850px -200px!important}
+.bg356 { background:url(../images/disc_color.jpg) no-repeat -875px -200px!important}
+.bg357 { background:url(../images/disc_color.jpg) no-repeat -900px -200px!important}
+.bg358 { background:url(../images/disc_color.jpg) no-repeat -925px -200px!important}
+.bg359 { background:url(../images/disc_color.jpg) no-repeat -950px -200px!important}
+.bg360 { background:url(../images/disc_color.jpg) no-repeat -975px -200px!important}
+
+
+
+/*    FILA 10  */
+
+
+.bg361 { background:url(../images/disc_color.jpg) no-repeat 0 -225px!important}
+.bg362 { background:url(../images/disc_color.jpg) no-repeat -25px -225px !important}
+.bg363 { background:url(../images/disc_color.jpg) no-repeat -50px -225px!important}
+.bg364 { background:url(../images/disc_color.jpg) no-repeat -75px -225px!important}
+.bg365 { background:url(../images/disc_color.jpg) no-repeat -100px -225px!important}
+.bg366 { background:url(../images/disc_color.jpg) no-repeat -125px -225px!important}
+.bg367 { background:url(../images/disc_color.jpg) no-repeat -150px -225px!important}
+.bg368 { background:url(../images/disc_color.jpg) no-repeat -175px -225px!important}
+.bg369 { background:url(../images/disc_color.jpg) no-repeat -200px -225px!important}
+.bg370 { background:url(../images/disc_color.jpg) no-repeat -225px -225px!important}
+.bg371 { background:url(../images/disc_color.jpg) no-repeat -250px -225px!important}
+.bg372 { background:url(../images/disc_color.jpg) no-repeat -275px -225px!important}
+.bg373 { background:url(../images/disc_color.jpg) no-repeat -300px -225px!important}
+.bg374 { background:url(../images/disc_color.jpg) no-repeat -325px -225px!important}
+.bg375 { background:url(../images/disc_color.jpg) no-repeat -350px -225px!important}
+.bg376 { background:url(../images/disc_color.jpg) no-repeat -375px -225px!important}
+.bg377 { background:url(../images/disc_color.jpg) no-repeat -400px -225px!important}
+.bg378 { background:url(../images/disc_color.jpg) no-repeat -425px -225px!important}
+.bg379 { background:url(../images/disc_color.jpg) no-repeat -450px -225px!important}
+.bg380 { background:url(../images/disc_color.jpg) no-repeat -475px -225px!important}
+.bg381 { background:url(../images/disc_color.jpg) no-repeat -500px -225px!important}
+.bg382 { background:url(../images/disc_color.jpg) no-repeat -525px -225px!important}
+.bg383 { background:url(../images/disc_color.jpg) no-repeat -550px -225px!important}
+.bg384 { background:url(../images/disc_color.jpg) no-repeat -575px -225px!important}
+.bg385 { background:url(../images/disc_color.jpg) no-repeat -600px -225px!important}
+.bg386 { background:url(../images/disc_color.jpg) no-repeat -625px -225px!important}
+.bg387 { background:url(../images/disc_color.jpg) no-repeat -650px -225px!important}
+.bg388 { background:url(../images/disc_color.jpg) no-repeat -675px -225px!important}
+.bg389 { background:url(../images/disc_color.jpg) no-repeat -700px -225px!important}
+.bg390 { background:url(../images/disc_color.jpg) no-repeat -725px -225px!important}
+.bg391 { background:url(../images/disc_color.jpg) no-repeat -750px -225px!important}
+.bg392 { background:url(../images/disc_color.jpg) no-repeat -775px -225px!important}
+.bg393 { background:url(../images/disc_color.jpg) no-repeat -800px -225px!important}
+.bg394 { background:url(../images/disc_color.jpg) no-repeat -825px -225px!important}
+.bg395 { background:url(../images/disc_color.jpg) no-repeat -850px -225px!important}
+.bg396 { background:url(../images/disc_color.jpg) no-repeat -875px -225px!important}
+.bg397 { background:url(../images/disc_color.jpg) no-repeat -900px -225px!important}
+.bg398 { background:url(../images/disc_color.jpg) no-repeat -925px -225px!important}
+.bg399 { background:url(../images/disc_color.jpg) no-repeat -950px -225px!important}
+.bg400 { background:url(../images/disc_color.jpg) no-repeat -975px -225px!important}
+
+
+/*    FILA 11  */
+
+
+.bg401 { background:url(../images/disc_color.jpg) no-repeat 0 -250px!important}
+.bg402 { background:url(../images/disc_color.jpg) no-repeat -25px -250px!important}
+.bg403 { background:url(../images/disc_color.jpg) no-repeat -50px -250px!important}
+.bg404 { background:url(../images/disc_color.jpg) no-repeat -75px -250px!important}
+.bg405 { background:url(../images/disc_color.jpg) no-repeat -100px -250px!important}
+.bg406 { background:url(../images/disc_color.jpg) no-repeat -125px -250px!important}
+.bg407 { background:url(../images/disc_color.jpg) no-repeat -150px -250px!important}
+.bg408 { background:url(../images/disc_color.jpg) no-repeat -175px -250px!important}
+.bg409 { background:url(../images/disc_color.jpg) no-repeat -200px -250px!important}
+.bg410 { background:url(../images/disc_color.jpg) no-repeat -225px -250px!important}
+.bg411 { background:url(../images/disc_color.jpg) no-repeat -250px -250px!important}
+.bg412 { background:url(../images/disc_color.jpg) no-repeat -275px -250px!important}
+.bg413 { background:url(../images/disc_color.jpg) no-repeat -300px -250px!important}
+.bg414 { background:url(../images/disc_color.jpg) no-repeat -325px -250px!important}
+.bg415 { background:url(../images/disc_color.jpg) no-repeat -350px -250px!important}
+.bg416 { background:url(../images/disc_color.jpg) no-repeat -375px -250px!important}
+.bg417 { background:url(../images/disc_color.jpg) no-repeat -400px -250px!important}
+.bg418 { background:url(../images/disc_color.jpg) no-repeat -425px -250px!important}
+.bg419 { background:url(../images/disc_color.jpg) no-repeat -450px -250px!important}
+.bg420 { background:url(../images/disc_color.jpg) no-repeat -475px -250px!important}
+.bg421 { background:url(../images/disc_color.jpg) no-repeat -500px -250px!important}
+.bg422 { background:url(../images/disc_color.jpg) no-repeat -525px -250px!important}
+.bg423 { background:url(../images/disc_color.jpg) no-repeat -550px -250px!important}
+.bg424 { background:url(../images/disc_color.jpg) no-repeat -575px -250px!important}
+.bg425 { background:url(../images/disc_color.jpg) no-repeat -600px -250px!important}
+.bg426 { background:url(../images/disc_color.jpg) no-repeat -625px -250px!important}
+.bg427 { background:url(../images/disc_color.jpg) no-repeat -650px -250px!important}
+.bg428 { background:url(../images/disc_color.jpg) no-repeat -675px -250px!important}
+.bg429 { background:url(../images/disc_color.jpg) no-repeat -700px -250px!important}
+.bg430 { background:url(../images/disc_color.jpg) no-repeat -725px -250px!important}
+.bg431 { background:url(../images/disc_color.jpg) no-repeat -750px -250px!important}
+.bg432 { background:url(../images/disc_color.jpg) no-repeat -775px -250px!important}
+.bg433 { background:url(../images/disc_color.jpg) no-repeat -800px -250px!important}
+.bg434 { background:url(../images/disc_color.jpg) no-repeat -825px -250px!important}
+.bg435 { background:url(../images/disc_color.jpg) no-repeat -850px -250px!important}
+.bg436 { background:url(../images/disc_color.jpg) no-repeat -875px -250px!important}
+.bg437 { background:url(../images/disc_color.jpg) no-repeat -900px -250px!important}
+.bg438 { background:url(../images/disc_color.jpg) no-repeat -925px -250px!important}
+.bg439 { background:url(../images/disc_color.jpg) no-repeat -950px -250px!important}
+.bg440 { background:url(../images/disc_color.jpg) no-repeat -975px -250px!important}
+
+
+/*    FILA 12 */
+
+
+.bg441 { background:url(../images/disc_color.jpg) no-repeat 0 -275px!important}
+.bg442 { background:url(../images/disc_color.jpg) no-repeat -25px -275px!important}
+.bg443 { background:url(../images/disc_color.jpg) no-repeat -50px -275px!important}
+.bg444 { background:url(../images/disc_color.jpg) no-repeat -75px -275px!important}
+.bg445 { background:url(../images/disc_color.jpg) no-repeat -100px -275px!important}
+.bg446 { background:url(../images/disc_color.jpg) no-repeat -125px -275px!important}
+.bg447 { background:url(../images/disc_color.jpg) no-repeat -150px -275px!important}
+.bg448 { background:url(../images/disc_color.jpg) no-repeat -175px -275px!important}
+.bg449 { background:url(../images/disc_color.jpg) no-repeat -200px -275px!important}
+.bg450 { background:url(../images/disc_color.jpg) no-repeat -225px -275px!important}
+.bg451 { background:url(../images/disc_color.jpg) no-repeat -250px -275px!important}
+.bg452 { background:url(../images/disc_color.jpg) no-repeat -275px -275px!important}
+.bg453 { background:url(../images/disc_color.jpg) no-repeat -300px -275px!important}
+.bg454 { background:url(../images/disc_color.jpg) no-repeat -325px -275px!important}
+.bg455 { background:url(../images/disc_color.jpg) no-repeat -350px -275px!important}
+.bg456 { background:url(../images/disc_color.jpg) no-repeat -375px -275px!important}
+.bg457 { background:url(../images/disc_color.jpg) no-repeat -400px -275px!important}
+.bg458 { background:url(../images/disc_color.jpg) no-repeat -425px -275px!important}
+.bg459 { background:url(../images/disc_color.jpg) no-repeat -450px -275px!important}
+.bg460 { background:url(../images/disc_color.jpg) no-repeat -475px -275px!important}
+.bg461 { background:url(../images/disc_color.jpg) no-repeat -500px -275px!important}
+.bg462 { background:url(../images/disc_color.jpg) no-repeat -525px -275px!important}
+.bg463 { background:url(../images/disc_color.jpg) no-repeat -550px -275px!important}
+.bg464 { background:url(../images/disc_color.jpg) no-repeat -575px -275px!important}
+.bg465 { background:url(../images/disc_color.jpg) no-repeat -600px -275px!important}
+.bg466 { background:url(../images/disc_color.jpg) no-repeat -625px -275px!important}
+.bg467 { background:url(../images/disc_color.jpg) no-repeat -650px -275px!important}
+.bg468 { background:url(../images/disc_color.jpg) no-repeat -675px -275px!important}
+.bg469 { background:url(../images/disc_color.jpg) no-repeat -700px -275px!important}
+.bg470 { background:url(../images/disc_color.jpg) no-repeat -725px -275px!important}
+.bg471 { background:url(../images/disc_color.jpg) no-repeat -750px -275px!important}
+.bg472 { background:url(../images/disc_color.jpg) no-repeat -775px -275px!important}
+.bg473 { background:url(../images/disc_color.jpg) no-repeat -800px -275px!important}
+.bg474 { background:url(../images/disc_color.jpg) no-repeat -825px -275px!important}
+.bg475 { background:url(../images/disc_color.jpg) no-repeat -850px -275px!important}
+.bg476 { background:url(../images/disc_color.jpg) no-repeat -875px -275px!important}
+.bg477 { background:url(../images/disc_color.jpg) no-repeat -900px -275px!important}
+.bg478 { background:url(../images/disc_color.jpg) no-repeat -925px -275px!important}
+.bg479 { background:url(../images/disc_color.jpg) no-repeat -950px -275px!important}
+.bg480 { background:url(../images/disc_color.jpg) no-repeat -975px -275px!important}
+
+
+
+/*    FILA 13 */
+
+
+.bg481 { background:url(../images/disc_color.jpg) no-repeat 0 -300px!important}
+.bg482 { background:url(../images/disc_color.jpg) no-repeat -25px -300px!important}
+.bg483 { background:url(../images/disc_color.jpg) no-repeat -50px -300px!important}
+.bg484 { background:url(../images/disc_color.jpg) no-repeat -75px -300px!important}
+.bg485 { background:url(../images/disc_color.jpg) no-repeat -100px -300px!important}
+.bg486 { background:url(../images/disc_color.jpg) no-repeat -125px -300px!important}
+.bg487 { background:url(../images/disc_color.jpg) no-repeat -150px -300px!important}
+.bg488 { background:url(../images/disc_color.jpg) no-repeat -175px -300px!important}
+.bg489 { background:url(../images/disc_color.jpg) no-repeat -200px -300px!important}
+.bg490 { background:url(../images/disc_color.jpg) no-repeat -225px -300px!important}
+.bg491 { background:url(../images/disc_color.jpg) no-repeat -250px -300px!important}
+.bg492 { background:url(../images/disc_color.jpg) no-repeat -275px -300px!important}
+.bg493 { background:url(../images/disc_color.jpg) no-repeat -300px -300px!important}
+.bg494 { background:url(../images/disc_color.jpg) no-repeat -325px -300px!important}
+.bg495 { background:url(../images/disc_color.jpg) no-repeat -350px -300px!important}
+.bg496 { background:url(../images/disc_color.jpg) no-repeat -375px -300px!important}
+.bg497 { background:url(../images/disc_color.jpg) no-repeat -400px -300px!important}
+.bg498 { background:url(../images/disc_color.jpg) no-repeat -425px -300px!important}
+.bg499 { background:url(../images/disc_color.jpg) no-repeat -450px -300px!important}
+.bg500 { background:url(../images/disc_color.jpg) no-repeat -475px -300px!important}
+.bg501 { background:url(../images/disc_color.jpg) no-repeat -500px -300px!important}
+.bg502 { background:url(../images/disc_color.jpg) no-repeat -525px -300px!important}
+.bg503 { background:url(../images/disc_color.jpg) no-repeat -550px -300px!important}
+.bg504 { background:url(../images/disc_color.jpg) no-repeat -575px -300px!important}
+.bg505 { background:url(../images/disc_color.jpg) no-repeat -600px -300px!important}
+.bg506 { background:url(../images/disc_color.jpg) no-repeat -625px -300px!important}
+.bg507 { background:url(../images/disc_color.jpg) no-repeat -650px -300px!important}
+.bg508 { background:url(../images/disc_color.jpg) no-repeat -675px -300px!important}
+.bg509 { background:url(../images/disc_color.jpg) no-repeat -700px -300px!important}
+.bg510 { background:url(../images/disc_color.jpg) no-repeat -725px -300px!important}
+.bg511 { background:url(../images/disc_color.jpg) no-repeat -750px -300px!important}
+.bg512 { background:url(../images/disc_color.jpg) no-repeat -775px -300px!important}
+.bg513 { background:url(../images/disc_color.jpg) no-repeat -800px -300px!important}
+.bg514 { background:url(../images/disc_color.jpg) no-repeat -825px -300px!important}
+.bg515 { background:url(../images/disc_color.jpg) no-repeat -850px -300px!important}
+.bg516 { background:url(../images/disc_color.jpg) no-repeat -875px -300px!important}
+.bg517 { background:url(../images/disc_color.jpg) no-repeat -900px -300px!important}
+.bg518 { background:url(../images/disc_color.jpg) no-repeat -925px -300px!important}
+.bg519 { background:url(../images/disc_color.jpg) no-repeat -950px -300px!important}
+.bg520 { background:url(../images/disc_color.jpg) no-repeat -975px -300px!important}
+
+
+/*    FILA 14 */
+
+
+.bg521 { background:url(../images/disc_color.jpg) no-repeat 0 -325px!important}
+.bg522 { background:url(../images/disc_color.jpg) no-repeat -25px -325px!important}
+.bg523 { background:url(../images/disc_color.jpg) no-repeat -50px -325px!important}
+.bg524 { background:url(../images/disc_color.jpg) no-repeat -75px -325px!important}
+.bg525 { background:url(../images/disc_color.jpg) no-repeat -100px -325px!important}
+.bg526 { background:url(../images/disc_color.jpg) no-repeat -125px -325px!important}
+.bg527 { background:url(../images/disc_color.jpg) no-repeat -150px -325px!important}
+.bg528 { background:url(../images/disc_color.jpg) no-repeat -175px -325px!important}
+.bg529 { background:url(../images/disc_color.jpg) no-repeat -200px -325px!important}
+.bg530 { background:url(../images/disc_color.jpg) no-repeat -225px -325px!important}
+.bg531 { background:url(../images/disc_color.jpg) no-repeat -250px -325px!important}
+.bg532 { background:url(../images/disc_color.jpg) no-repeat -275px -325px!important}
+.bg533 { background:url(../images/disc_color.jpg) no-repeat -300px -325px!important}
+.bg534 { background:url(../images/disc_color.jpg) no-repeat -325px -325px!important}
+.bg535 { background:url(../images/disc_color.jpg) no-repeat -350px -325px!important}
+.bg536 { background:url(../images/disc_color.jpg) no-repeat -375px -325px!important}
+.bg537 { background:url(../images/disc_color.jpg) no-repeat -400px -325px!important}
+.bg538 { background:url(../images/disc_color.jpg) no-repeat -425px -325px!important}
+.bg539 { background:url(../images/disc_color.jpg) no-repeat -450px -325px!important}
+.bg540 { background:url(../images/disc_color.jpg) no-repeat -475px -325px!important}
+.bg541 { background:url(../images/disc_color.jpg) no-repeat -500px -325px!important}
+.bg542 { background:url(../images/disc_color.jpg) no-repeat -525px -325px!important}
+.bg543 { background:url(../images/disc_color.jpg) no-repeat -550px -325px!important}
+.bg544 { background:url(../images/disc_color.jpg) no-repeat -575px -325px!important}
+.bg545 { background:url(../images/disc_color.jpg) no-repeat -600px -325px!important}
+.bg546 { background:url(../images/disc_color.jpg) no-repeat -625px -325px!important}
+.bg547 { background:url(../images/disc_color.jpg) no-repeat -650px -325px!important}
+.bg548 { background:url(../images/disc_color.jpg) no-repeat -675px -325px!important}
+.bg549 { background:url(../images/disc_color.jpg) no-repeat -700px -325px!important}
+.bg550 { background:url(../images/disc_color.jpg) no-repeat -725px -325px!important}
+.bg551 { background:url(../images/disc_color.jpg) no-repeat -750px -325px!important}
+.bg552 { background:url(../images/disc_color.jpg) no-repeat -775px -325px!important}
+.bg553 { background:url(../images/disc_color.jpg) no-repeat -800px -325px!important}
+.bg554 { background:url(../images/disc_color.jpg) no-repeat -825px -325px!important}
+.bg555 { background:url(../images/disc_color.jpg) no-repeat -850px -325px!important}
+.bg556 { background:url(../images/disc_color.jpg) no-repeat -875px -325px!important}
+.bg557 { background:url(../images/disc_color.jpg) no-repeat -900px -325px!important}
+.bg558 { background:url(../images/disc_color.jpg) no-repeat -925px -325px!important}
+.bg559 { background:url(../images/disc_color.jpg) no-repeat -950px -325px!important}
+.bg560 { background:url(../images/disc_color.jpg) no-repeat -975px -325px!important}
+
+
+/*   FILA 15   */
+
+
+.bg561 { background:url(../images/disc_color.jpg) no-repeat 0 -350px!important}
+.bg562 { background:url(../images/disc_color.jpg) no-repeat -25px -350px!important}
+.bg563 { background:url(../images/disc_color.jpg) no-repeat -50px -350px!important}
+.bg564 { background:url(../images/disc_color.jpg) no-repeat -75px -350px!important}
+.bg565 { background:url(../images/disc_color.jpg) no-repeat -100px -350px!important}
+.bg566 { background:url(../images/disc_color.jpg) no-repeat -125px -350px!important}
+.bg567 { background:url(../images/disc_color.jpg) no-repeat -150px -350px!important}
+.bg568 { background:url(../images/disc_color.jpg) no-repeat -175px -350px!important}
+.bg569 { background:url(../images/disc_color.jpg) no-repeat -200px -350px!important}
+.bg570 { background:url(../images/disc_color.jpg) no-repeat -225px -350px!important}
+.bg571 { background:url(../images/disc_color.jpg) no-repeat -250px -350px!important}
+.bg572 { background:url(../images/disc_color.jpg) no-repeat -275px -350px!important}
+.bg573 { background:url(../images/disc_color.jpg) no-repeat -300px -350px!important}
+.bg574 { background:url(../images/disc_color.jpg) no-repeat -325px -350px!important}
+.bg575 { background:url(../images/disc_color.jpg) no-repeat -350px -350px!important}
+.bg576 { background:url(../images/disc_color.jpg) no-repeat -375px -350px!important}
+.bg577 { background:url(../images/disc_color.jpg) no-repeat -400px -350px!important}
+.bg578 { background:url(../images/disc_color.jpg) no-repeat -425px -350px!important}
+.bg579 { background:url(../images/disc_color.jpg) no-repeat -450px -350px!important}
+.bg580 { background:url(../images/disc_color.jpg) no-repeat -475px -350px!important}
+.bg581 { background:url(../images/disc_color.jpg) no-repeat -500px -350px!important}
+.bg582 { background:url(../images/disc_color.jpg) no-repeat -525px -350px!important}
+.bg583 { background:url(../images/disc_color.jpg) no-repeat -550px -350px!important}
+.bg584 { background:url(../images/disc_color.jpg) no-repeat -575px -350px!important}
+.bg585 { background:url(../images/disc_color.jpg) no-repeat -600px -350px!important}
+.bg586 { background:url(../images/disc_color.jpg) no-repeat -625px -350px!important}
+.bg587 { background:url(../images/disc_color.jpg) no-repeat -650px -350px!important}
+.bg588 { background:url(../images/disc_color.jpg) no-repeat -675px -350px!important}
+.bg589 { background:url(../images/disc_color.jpg) no-repeat -700px -350px!important}
+.bg590 { background:url(../images/disc_color.jpg) no-repeat -725px -350px!important}
+.bg591 { background:url(../images/disc_color.jpg) no-repeat -750px -350px!important}
+.bg592 { background:url(../images/disc_color.jpg) no-repeat -775px -350px!important}
+.bg593 { background:url(../images/disc_color.jpg) no-repeat -800px -350px!important}
+.bg594 { background:url(../images/disc_color.jpg) no-repeat -825px -350px!important}
+.bg595 { background:url(../images/disc_color.jpg) no-repeat -850px -350px!important}
+.bg596 { background:url(../images/disc_color.jpg) no-repeat -875px -350px!important}
+.bg597 { background:url(../images/disc_color.jpg) no-repeat -900px -350px!important}
+.bg598 { background:url(../images/disc_color.jpg) no-repeat -925px -350px!important}
+.bg599 { background:url(../images/disc_color.jpg) no-repeat -950px -350px!important}
+.bg600 { background:url(../images/disc_color.jpg) no-repeat -975px -350px!important}
+
+
+/*    FILA 16    */
+
+
+.bg601 { background:url(../images/disc_color.jpg) no-repeat 0 -375px!important}
+.bg602 { background:url(../images/disc_color.jpg) no-repeat -25px -375px!important}
+.bg603 { background:url(../images/disc_color.jpg) no-repeat -50px -375px!important}
+.bg604 { background:url(../images/disc_color.jpg) no-repeat -75px -375px!important}
+.bg605 { background:url(../images/disc_color.jpg) no-repeat -100px -375px!important}
+.bg606 { background:url(../images/disc_color.jpg) no-repeat -125px -375px!important}
+.bg607 { background:url(../images/disc_color.jpg) no-repeat -150px -375px!important}
+.bg608 { background:url(../images/disc_color.jpg) no-repeat -175px -375px!important}
+.bg609 { background:url(../images/disc_color.jpg) no-repeat -200px -375px!important}
+.bg610 { background:url(../images/disc_color.jpg) no-repeat -225px -375px!important}
+.bg611 { background:url(../images/disc_color.jpg) no-repeat -250px -375px!important}
+.bg612 { background:url(../images/disc_color.jpg) no-repeat -275px -375px!important}
+.bg613 { background:url(../images/disc_color.jpg) no-repeat -300px -375px!important}
+.bg614 { background:url(../images/disc_color.jpg) no-repeat -325px -375px!important}
+.bg615 { background:url(../images/disc_color.jpg) no-repeat -350px -375px!important}
+.bg616 { background:url(../images/disc_color.jpg) no-repeat -375px -375px!important}
+.bg617 { background:url(../images/disc_color.jpg) no-repeat -400px -375px!important}
+.bg618 { background:url(../images/disc_color.jpg) no-repeat -425px -375px!important}
+.bg619 { background:url(../images/disc_color.jpg) no-repeat -450px -375px!important}
+.bg620 { background:url(../images/disc_color.jpg) no-repeat -475px -375px!important}
+.bg621 { background:url(../images/disc_color.jpg) no-repeat -500px -375px!important}
+.bg622 { background:url(../images/disc_color.jpg) no-repeat -525px -375px!important}
+.bg623 { background:url(../images/disc_color.jpg) no-repeat -550px -375px!important}
+.bg624 { background:url(../images/disc_color.jpg) no-repeat -575px -375px!important}
+.bg625 { background:url(../images/disc_color.jpg) no-repeat -600px -375px!important}
+.bg626 { background:url(../images/disc_color.jpg) no-repeat -625px -375px!important}
+.bg627 { background:url(../images/disc_color.jpg) no-repeat -650px -375px!important}
+.bg628 { background:url(../images/disc_color.jpg) no-repeat -675px -375px!important}
+.bg629 { background:url(../images/disc_color.jpg) no-repeat -700px -375px!important}
+.bg630 { background:url(../images/disc_color.jpg) no-repeat -725px -375px!important}
+.bg631 { background:url(../images/disc_color.jpg) no-repeat -750px -375px!important}
+.bg632 { background:url(../images/disc_color.jpg) no-repeat -775px -375px!important}
+.bg633 { background:url(../images/disc_color.jpg) no-repeat -800px -375px!important}
+.bg634 { background:url(../images/disc_color.jpg) no-repeat -825px -375px!important}
+.bg635 { background:url(../images/disc_color.jpg) no-repeat -850px -375px!important}
+.bg636 { background:url(../images/disc_color.jpg) no-repeat -875px -375px!important}
+.bg637 { background:url(../images/disc_color.jpg) no-repeat -900px -375px!important}
+.bg638 { background:url(../images/disc_color.jpg) no-repeat -925px -375px!important}
+.bg639 { background:url(../images/disc_color.jpg) no-repeat -950px -375px!important}
+.bg640 { background:url(../images/disc_color.jpg) no-repeat -975px -375px!important}
+
+
+/*    FILA 17 */
+
+
+.bg641 { background:url(../images/disc_color.jpg) no-repeat 0 -400px!important}
+.bg642 { background:url(../images/disc_color.jpg) no-repeat -25px -400px!important}
+.bg643 { background:url(../images/disc_color.jpg) no-repeat -50px -400px!important}
+.bg644 { background:url(../images/disc_color.jpg) no-repeat -75px -400px!important}
+.bg645 { background:url(../images/disc_color.jpg) no-repeat -100px -400px!important}
+.bg646 { background:url(../images/disc_color.jpg) no-repeat -125px -400px!important}
+.bg647 { background:url(../images/disc_color.jpg) no-repeat -150px -400px!important}
+.bg648 { background:url(../images/disc_color.jpg) no-repeat -175px -400px!important}
+.bg649 { background:url(../images/disc_color.jpg) no-repeat -200px -400px!important}
+.bg650 { background:url(../images/disc_color.jpg) no-repeat -225px -400px!important}
+.bg651 { background:url(../images/disc_color.jpg) no-repeat -250px -400px!important}
+.bg652 { background:url(../images/disc_color.jpg) no-repeat -275px -400px!important}
+.bg653 { background:url(../images/disc_color.jpg) no-repeat -300px -400px!important}
+.bg654 { background:url(../images/disc_color.jpg) no-repeat -325px -400px!important}
+.bg655 { background:url(../images/disc_color.jpg) no-repeat -350px -400px!important}
+.bg656 { background:url(../images/disc_color.jpg) no-repeat -375px -400px!important}
+.bg657 { background:url(../images/disc_color.jpg) no-repeat -400px -400px!important}
+.bg658 { background:url(../images/disc_color.jpg) no-repeat -425px -400px!important}
+.bg659 { background:url(../images/disc_color.jpg) no-repeat -450px -400px!important}
+.bg660 { background:url(../images/disc_color.jpg) no-repeat -475px -400px!important}
+.bg661 { background:url(../images/disc_color.jpg) no-repeat -500px -400px!important}
+.bg662 { background:url(../images/disc_color.jpg) no-repeat -525px -400px!important}
+.bg663 { background:url(../images/disc_color.jpg) no-repeat -550px -400px!important}
+.bg664 { background:url(../images/disc_color.jpg) no-repeat -575px -400px!important}
+.bg665 { background:url(../images/disc_color.jpg) no-repeat -600px -400px!important}
+.bg666 { background:url(../images/disc_color.jpg) no-repeat -625px -400px!important}
+.bg667 { background:url(../images/disc_color.jpg) no-repeat -650px -400px!important}
+.bg668 { background:url(../images/disc_color.jpg) no-repeat -675px -400px!important}
+.bg669 { background:url(../images/disc_color.jpg) no-repeat -700px -400px!important}
+.bg670 { background:url(../images/disc_color.jpg) no-repeat -725px -400px!important}
+.bg671 { background:url(../images/disc_color.jpg) no-repeat -750px -400px!important}
+.bg672 { background:url(../images/disc_color.jpg) no-repeat -775px -400px!important}
+.bg673 { background:url(../images/disc_color.jpg) no-repeat -800px -400px!important}
+.bg674 { background:url(../images/disc_color.jpg) no-repeat -825px -400px!important}
+.bg675 { background:url(../images/disc_color.jpg) no-repeat -850px -400px!important}
+.bg676 { background:url(../images/disc_color.jpg) no-repeat -875px -400px!important}
+.bg677 { background:url(../images/disc_color.jpg) no-repeat -900px -400px!important}
+.bg678 { background:url(../images/disc_color.jpg) no-repeat -925px -400px!important}
+.bg679 { background:url(../images/disc_color.jpg) no-repeat -950px -400px!important}
+.bg680 { background:url(../images/disc_color.jpg) no-repeat -975px -400px!important}
+
+
+
+/*    FILA 18 */
+
+
+.bg681 { background:url(../images/disc_color.jpg) no-repeat 0 -425px!important}
+.bg682 { background:url(../images/disc_color.jpg) no-repeat -25px -425px!important}
+.bg683 { background:url(../images/disc_color.jpg) no-repeat -50px -425px!important}
+.bg684 { background:url(../images/disc_color.jpg) no-repeat -75px -425px!important}
+.bg685 { background:url(../images/disc_color.jpg) no-repeat -100px -425px!important}
+.bg686 { background:url(../images/disc_color.jpg) no-repeat -125px -425px!important}
+.bg687 { background:url(../images/disc_color.jpg) no-repeat -150px -425px!important}
+.bg688 { background:url(../images/disc_color.jpg) no-repeat -175px -425px!important}
+.bg689 { background:url(../images/disc_color.jpg) no-repeat -200px -425px!important}
+.bg690 { background:url(../images/disc_color.jpg) no-repeat -225px -425px!important}
+.bg691 { background:url(../images/disc_color.jpg) no-repeat -250px -425px!important}
+.bg692 { background:url(../images/disc_color.jpg) no-repeat -275px -425px!important}
+.bg693 { background:url(../images/disc_color.jpg) no-repeat -300px -425px!important}
+.bg694 { background:url(../images/disc_color.jpg) no-repeat -325px -425px!important}
+.bg695 { background:url(../images/disc_color.jpg) no-repeat -350px -425px!important}
+.bg696 { background:url(../images/disc_color.jpg) no-repeat -375px -425px!important}
+.bg697 { background:url(../images/disc_color.jpg) no-repeat -400px -425px!important}
+.bg698 { background:url(../images/disc_color.jpg) no-repeat -425px -425px!important}
+.bg699 { background:url(../images/disc_color.jpg) no-repeat -450px -425px!important}
+.bg700 { background:url(../images/disc_color.jpg) no-repeat -475px -425px!important}
+.bg701 { background:url(../images/disc_color.jpg) no-repeat -500px -425px!important}
+.bg702 { background:url(../images/disc_color.jpg) no-repeat -525px -425px!important}
+.bg703 { background:url(../images/disc_color.jpg) no-repeat -550px -425px!important}
+.bg704 { background:url(../images/disc_color.jpg) no-repeat -575px -425px!important}
+.bg705 { background:url(../images/disc_color.jpg) no-repeat -600px -425px!important}
+.bg706 { background:url(../images/disc_color.jpg) no-repeat -625px -425px!important}
+.bg707 { background:url(../images/disc_color.jpg) no-repeat -650px -425px!important}
+.bg708 { background:url(../images/disc_color.jpg) no-repeat -675px -425px!important}
+.bg709 { background:url(../images/disc_color.jpg) no-repeat -700px -425px!important}
+.bg710 { background:url(../images/disc_color.jpg) no-repeat -725px -425px!important}
+.bg711 { background:url(../images/disc_color.jpg) no-repeat -750px -425px!important}
+.bg712 { background:url(../images/disc_color.jpg) no-repeat -775px -425px!important}
+.bg713 { background:url(../images/disc_color.jpg) no-repeat -800px -425px!important}
+.bg714 { background:url(../images/disc_color.jpg) no-repeat -825px -425px!important}
+.bg715 { background:url(../images/disc_color.jpg) no-repeat -850px -425px!important}
+.bg716 { background:url(../images/disc_color.jpg) no-repeat -875px -425px!important}
+.bg717 { background:url(../images/disc_color.jpg) no-repeat -900px -425px!important}
+.bg718 { background:url(../images/disc_color.jpg) no-repeat -925px -425px!important}
+.bg719 { background:url(../images/disc_color.jpg) no-repeat -950px -425px!important}
+.bg720 { background:url(../images/disc_color.jpg) no-repeat -975px -425px!important}
+
+
+/*    FILA 19 */
+
+
+.bg721 { background:url(../images/disc_color.jpg) no-repeat 0 -450px!important}
+.bg722 { background:url(../images/disc_color.jpg) no-repeat -25px -450px!important}
+.bg723 { background:url(../images/disc_color.jpg) no-repeat -50px -450px!important}
+.bg724 { background:url(../images/disc_color.jpg) no-repeat -75px -450px!important}
+.bg725 { background:url(../images/disc_color.jpg) no-repeat -100px -450px!important}
+.bg726 { background:url(../images/disc_color.jpg) no-repeat -125px -450px!important}
+.bg727 { background:url(../images/disc_color.jpg) no-repeat -150px -450px!important}
+.bg728 { background:url(../images/disc_color.jpg) no-repeat -175px -450px!important}
+.bg729 { background:url(../images/disc_color.jpg) no-repeat -200px -450px!important}
+.bg730 { background:url(../images/disc_color.jpg) no-repeat -225px -450px!important}
+.bg731 { background:url(../images/disc_color.jpg) no-repeat -250px -450px!important}
+.bg732 { background:url(../images/disc_color.jpg) no-repeat -275px -450px!important}
+.bg733 { background:url(../images/disc_color.jpg) no-repeat -300px -450px!important}
+.bg734 { background:url(../images/disc_color.jpg) no-repeat -325px -450px!important}
+.bg735 { background:url(../images/disc_color.jpg) no-repeat -350px -450px!important}
+.bg736 { background:url(../images/disc_color.jpg) no-repeat -375px -450px!important}
+.bg737 { background:url(../images/disc_color.jpg) no-repeat -400px -450px!important}
+.bg738 { background:url(../images/disc_color.jpg) no-repeat -425px -450px!important}
+.bg739 { background:url(../images/disc_color.jpg) no-repeat -450px -450px!important}
+.bg740 { background:url(../images/disc_color.jpg) no-repeat -475px -450px!important}
+.bg741 { background:url(../images/disc_color.jpg) no-repeat -500px -450px!important}
+.bg742 { background:url(../images/disc_color.jpg) no-repeat -525px -450px!important}
+.bg743 { background:url(../images/disc_color.jpg) no-repeat -550px -450px!important}
+.bg744 { background:url(../images/disc_color.jpg) no-repeat -575px -450px!important}
+.bg745 { background:url(../images/disc_color.jpg) no-repeat -600px -450px!important}
+.bg746 { background:url(../images/disc_color.jpg) no-repeat -625px -450px!important}
+.bg747 { background:url(../images/disc_color.jpg) no-repeat -650px -450px!important}
+.bg748 { background:url(../images/disc_color.jpg) no-repeat -675px -450px!important}
+.bg749 { background:url(../images/disc_color.jpg) no-repeat -700px -450px!important}
+.bg750 { background:url(../images/disc_color.jpg) no-repeat -725px -450px!important}
+.bg751 { background:url(../images/disc_color.jpg) no-repeat -750px -450px!important}
+.bg752 { background:url(../images/disc_color.jpg) no-repeat -775px -450px!important}
+.bg753 { background:url(../images/disc_color.jpg) no-repeat -800px -450px!important}
+.bg754 { background:url(../images/disc_color.jpg) no-repeat -825px -450px!important}
+.bg755 { background:url(../images/disc_color.jpg) no-repeat -850px -450px!important}
+.bg756 { background:url(../images/disc_color.jpg) no-repeat -875px -450px!important}
+.bg757 { background:url(../images/disc_color.jpg) no-repeat -900px -450px!important}
+.bg758 { background:url(../images/disc_color.jpg) no-repeat -925px -450px!important}
+.bg759 { background:url(../images/disc_color.jpg) no-repeat -950px -450px!important}
+.bg760 { background:url(../images/disc_color.jpg) no-repeat -975px -450px!important}
+
+
+/*     FILA  20      */
+
+
+.bg761 { background:url(../images/disc_color.jpg) no-repeat 0 -475px!important}
+.bg762 { background:url(../images/disc_color.jpg) no-repeat -25px -225px !important}
+.bg763 { background:url(../images/disc_color.jpg) no-repeat -50px -475px!important}
+.bg764 { background:url(../images/disc_color.jpg) no-repeat -75px -475px!important}
+.bg765 { background:url(../images/disc_color.jpg) no-repeat -100px -475px!important}
+.bg766 { background:url(../images/disc_color.jpg) no-repeat -125px -475px!important}
+.bg767 { background:url(../images/disc_color.jpg) no-repeat -150px -475px!important}
+.bg768 { background:url(../images/disc_color.jpg) no-repeat -175px -475px!important}
+.bg769 { background:url(../images/disc_color.jpg) no-repeat -200px -475px!important}
+.bg770 { background:url(../images/disc_color.jpg) no-repeat -225px -475px!important}
+.bg771 { background:url(../images/disc_color.jpg) no-repeat -250px -475px!important}
+.bg772 { background:url(../images/disc_color.jpg) no-repeat -275px -475px!important}
+.bg773 { background:url(../images/disc_color.jpg) no-repeat -300px -475px!important}
+.bg774 { background:url(../images/disc_color.jpg) no-repeat -325px -475px!important}
+.bg775 { background:url(../images/disc_color.jpg) no-repeat -350px -475px!important}
+.bg776 { background:url(../images/disc_color.jpg) no-repeat -375px -475px!important}
+.bg777 { background:url(../images/disc_color.jpg) no-repeat -400px -475px!important}
+.bg778 { background:url(../images/disc_color.jpg) no-repeat -425px -475px!important}
+.bg779 { background:url(../images/disc_color.jpg) no-repeat -450px -475px!important}
+.bg780 { background:url(../images/disc_color.jpg) no-repeat -475px -475px!important}
+.bg781 { background:url(../images/disc_color.jpg) no-repeat -500px -475px!important}
+.bg782 { background:url(../images/disc_color.jpg) no-repeat -525px -475px!important}
+.bg783 { background:url(../images/disc_color.jpg) no-repeat -550px -475px!important}
+.bg784 { background:url(../images/disc_color.jpg) no-repeat -575px -475px!important}
+.bg785 { background:url(../images/disc_color.jpg) no-repeat -600px -475px!important}
+.bg786 { background:url(../images/disc_color.jpg) no-repeat -625px -475px!important}
+.bg787 { background:url(../images/disc_color.jpg) no-repeat -650px -475px!important}
+.bg788 { background:url(../images/disc_color.jpg) no-repeat -675px -475px!important}
+.bg789 { background:url(../images/disc_color.jpg) no-repeat -700px -475px!important}
+.bg790 { background:url(../images/disc_color.jpg) no-repeat -725px -475px!important}
+.bg791 { background:url(../images/disc_color.jpg) no-repeat -750px -475px!important}
+.bg792 { background:url(../images/disc_color.jpg) no-repeat -775px -475px!important}
+.bg793 { background:url(../images/disc_color.jpg) no-repeat -800px -475px!important}
+.bg794 { background:url(../images/disc_color.jpg) no-repeat -825px -475px!important}
+.bg795 { background:url(../images/disc_color.jpg) no-repeat -850px -475px!important}
+.bg796 { background:url(../images/disc_color.jpg) no-repeat -875px -475px!important}
+.bg797 { background:url(../images/disc_color.jpg) no-repeat -900px -475px!important}
+.bg798 { background:url(../images/disc_color.jpg) no-repeat -925px -475px!important}
+.bg799 { background:url(../images/disc_color.jpg) no-repeat -950px -475px!important}
+.bg800 { background:url(../images/disc_color.jpg) no-repeat -975px -475px!important}
+
+
+/*    FILA 21  */
+
+
+.bg801 { background:url(../images/disc_color.jpg) no-repeat 0 -500px!important}
+.bg802 { background:url(../images/disc_color.jpg) no-repeat -25px -500px!important}
+.bg803 { background:url(../images/disc_color.jpg) no-repeat -50px -500px!important}
+.bg804 { background:url(../images/disc_color.jpg) no-repeat -75px -500px!important}
+.bg805 { background:url(../images/disc_color.jpg) no-repeat -100px -500px!important}
+.bg806 { background:url(../images/disc_color.jpg) no-repeat -125px -500px!important}
+.bg807 { background:url(../images/disc_color.jpg) no-repeat -150px -500px!important}
+.bg808 { background:url(../images/disc_color.jpg) no-repeat -175px -500px!important}
+.bg809 { background:url(../images/disc_color.jpg) no-repeat -200px -500px!important}
+.bg810 { background:url(../images/disc_color.jpg) no-repeat -225px -500px!important}
+.bg811 { background:url(../images/disc_color.jpg) no-repeat -250px -500px!important}
+.bg812 { background:url(../images/disc_color.jpg) no-repeat -275px -500px!important}
+.bg813 { background:url(../images/disc_color.jpg) no-repeat -300px -500px!important}
+.bg814 { background:url(../images/disc_color.jpg) no-repeat -325px -500px!important}
+.bg815 { background:url(../images/disc_color.jpg) no-repeat -350px -500px!important}
+.bg816 { background:url(../images/disc_color.jpg) no-repeat -375px -500px!important}
+.bg817 { background:url(../images/disc_color.jpg) no-repeat -400px -500px!important}
+.bg818 { background:url(../images/disc_color.jpg) no-repeat -425px -500px!important}
+.bg819 { background:url(../images/disc_color.jpg) no-repeat -450px -500px!important}
+.bg820 { background:url(../images/disc_color.jpg) no-repeat -475px -500px!important}
+.bg821 { background:url(../images/disc_color.jpg) no-repeat -500px -500px!important}
+.bg822 { background:url(../images/disc_color.jpg) no-repeat -525px -500px!important}
+.bg823 { background:url(../images/disc_color.jpg) no-repeat -550px -500px!important}
+.bg824 { background:url(../images/disc_color.jpg) no-repeat -575px -500px!important}
+.bg825 { background:url(../images/disc_color.jpg) no-repeat -600px -500px!important}
+.bg826 { background:url(../images/disc_color.jpg) no-repeat -625px -500px!important}
+.bg827 { background:url(../images/disc_color.jpg) no-repeat -650px -500px!important}
+.bg828 { background:url(../images/disc_color.jpg) no-repeat -675px -500px!important}
+.bg829 { background:url(../images/disc_color.jpg) no-repeat -700px -500px!important}
+.bg830 { background:url(../images/disc_color.jpg) no-repeat -725px -500px!important}
+.bg831 { background:url(../images/disc_color.jpg) no-repeat -750px -500px!important}
+.bg832 { background:url(../images/disc_color.jpg) no-repeat -775px -500px!important}
+.bg833 { background:url(../images/disc_color.jpg) no-repeat -800px -500px!important}
+.bg834 { background:url(../images/disc_color.jpg) no-repeat -825px -500px!important}
+.bg835 { background:url(../images/disc_color.jpg) no-repeat -850px -500px!important}
+.bg836 { background:url(../images/disc_color.jpg) no-repeat -875px -500px!important}
+.bg837 { background:url(../images/disc_color.jpg) no-repeat -900px -500px!important}
+.bg838 { background:url(../images/disc_color.jpg) no-repeat -925px -500px!important}
+.bg839 { background:url(../images/disc_color.jpg) no-repeat -950px -500px!important}
+.bg840 { background:url(../images/disc_color.jpg) no-repeat -975px -500px!important}
+
+
+/*    FILA 22 */
+
+
+.bg841 { background:url(../images/disc_color.jpg) no-repeat 0 -525px!important}
+.bg842 { background:url(../images/disc_color.jpg) no-repeat -25px -525px!important}
+.bg843 { background:url(../images/disc_color.jpg) no-repeat -50px -525px!important}
+.bg844 { background:url(../images/disc_color.jpg) no-repeat -75px -525px!important}
+.bg845 { background:url(../images/disc_color.jpg) no-repeat -100px -525px!important}
+.bg846 { background:url(../images/disc_color.jpg) no-repeat -125px -525px!important}
+.bg847 { background:url(../images/disc_color.jpg) no-repeat -150px -525px!important}
+.bg848 { background:url(../images/disc_color.jpg) no-repeat -175px -525px!important}
+.bg849 { background:url(../images/disc_color.jpg) no-repeat -200px -525px!important}
+.bg850 { background:url(../images/disc_color.jpg) no-repeat -225px -525px!important}
+.bg851 { background:url(../images/disc_color.jpg) no-repeat -250px -525px!important}
+.bg852 { background:url(../images/disc_color.jpg) no-repeat -275px -525px!important}
+.bg853 { background:url(../images/disc_color.jpg) no-repeat -300px -525px!important}
+.bg854 { background:url(../images/disc_color.jpg) no-repeat -325px -525px!important}
+.bg855 { background:url(../images/disc_color.jpg) no-repeat -350px -525px!important}
+.bg856 { background:url(../images/disc_color.jpg) no-repeat -375px -525px!important}
+.bg857 { background:url(../images/disc_color.jpg) no-repeat -400px -525px!important}
+.bg858 { background:url(../images/disc_color.jpg) no-repeat -425px -525px!important}
+.bg859 { background:url(../images/disc_color.jpg) no-repeat -450px -525px!important}
+.bg860 { background:url(../images/disc_color.jpg) no-repeat -475px -525px!important}
+.bg861 { background:url(../images/disc_color.jpg) no-repeat -500px -525px!important}
+.bg862 { background:url(../images/disc_color.jpg) no-repeat -525px -525px!important}
+.bg863 { background:url(../images/disc_color.jpg) no-repeat -550px -525px!important}
+.bg864 { background:url(../images/disc_color.jpg) no-repeat -575px -525px!important}
+.bg865 { background:url(../images/disc_color.jpg) no-repeat -600px -525px!important}
+.bg866 { background:url(../images/disc_color.jpg) no-repeat -625px -525px!important}
+.bg867 { background:url(../images/disc_color.jpg) no-repeat -650px -525px!important}
+.bg868 { background:url(../images/disc_color.jpg) no-repeat -675px -525px!important}
+.bg869 { background:url(../images/disc_color.jpg) no-repeat -700px -525px!important}
+.bg870 { background:url(../images/disc_color.jpg) no-repeat -725px -525px!important}
+.bg871 { background:url(../images/disc_color.jpg) no-repeat -750px -525px!important}
+.bg872 { background:url(../images/disc_color.jpg) no-repeat -775px -525px!important}
+.bg873 { background:url(../images/disc_color.jpg) no-repeat -800px -525px!important}
+.bg874 { background:url(../images/disc_color.jpg) no-repeat -825px -525px!important}
+.bg875 { background:url(../images/disc_color.jpg) no-repeat -850px -525px!important}
+.bg876 { background:url(../images/disc_color.jpg) no-repeat -875px -525px!important}
+.bg877 { background:url(../images/disc_color.jpg) no-repeat -900px -525px!important}
+.bg878 { background:url(../images/disc_color.jpg) no-repeat -925px -525px!important}
+.bg879 { background:url(../images/disc_color.jpg) no-repeat -950px -525px!important}
+.bg880 { background:url(../images/disc_color.jpg) no-repeat -975px -525px!important}
+
+
+
+/*    FILA 23 */
+
+
+.bg881 { background:url(../images/disc_color.jpg) no-repeat 0 -550px!important}
+.bg882 { background:url(../images/disc_color.jpg) no-repeat -25px -550px!important}
+.bg883 { background:url(../images/disc_color.jpg) no-repeat -50px -550px!important}
+.bg884 { background:url(../images/disc_color.jpg) no-repeat -75px -550px!important}
+.bg885 { background:url(../images/disc_color.jpg) no-repeat -100px -550px!important}
+.bg886 { background:url(../images/disc_color.jpg) no-repeat -125px -550px!important}
+.bg887 { background:url(../images/disc_color.jpg) no-repeat -150px -550px!important}
+.bg888 { background:url(../images/disc_color.jpg) no-repeat -175px -550px!important}
+.bg889 { background:url(../images/disc_color.jpg) no-repeat -200px -550px!important}
+.bg890 { background:url(../images/disc_color.jpg) no-repeat -225px -550px!important}
+.bg891 { background:url(../images/disc_color.jpg) no-repeat -250px -550px!important}
+.bg892 { background:url(../images/disc_color.jpg) no-repeat -275px -550px!important}
+.bg893 { background:url(../images/disc_color.jpg) no-repeat -300px -550px!important}
+.bg894 { background:url(../images/disc_color.jpg) no-repeat -325px -550px!important}
+.bg895 { background:url(../images/disc_color.jpg) no-repeat -350px -550px!important}
+.bg896 { background:url(../images/disc_color.jpg) no-repeat -375px -550px!important}
+.bg897 { background:url(../images/disc_color.jpg) no-repeat -400px -550px!important}
+.bg898 { background:url(../images/disc_color.jpg) no-repeat -425px -550px!important}
+.bg899 { background:url(../images/disc_color.jpg) no-repeat -450px -550px!important}
+.bg900 { background:url(../images/disc_color.jpg) no-repeat -475px -550px!important}
+.bg901 { background:url(../images/disc_color.jpg) no-repeat -500px -550px!important}
+.bg902 { background:url(../images/disc_color.jpg) no-repeat -525px -550px!important}
+.bg903 { background:url(../images/disc_color.jpg) no-repeat -550px -550px!important}
+.bg904 { background:url(../images/disc_color.jpg) no-repeat -575px -550px!important}
+.bg905 { background:url(../images/disc_color.jpg) no-repeat -600px -550px!important}
+.bg906 { background:url(../images/disc_color.jpg) no-repeat -625px -550px!important}
+.bg907 { background:url(../images/disc_color.jpg) no-repeat -650px -550px!important}
+.bg908 { background:url(../images/disc_color.jpg) no-repeat -675px -550px!important}
+.bg909 { background:url(../images/disc_color.jpg) no-repeat -700px -550px!important}
+.bg910 { background:url(../images/disc_color.jpg) no-repeat -725px -550px!important}
+.bg911 { background:url(../images/disc_color.jpg) no-repeat -750px -550px!important}
+.bg912 { background:url(../images/disc_color.jpg) no-repeat -775px -550px!important}
+.bg913 { background:url(../images/disc_color.jpg) no-repeat -800px -550px!important}
+.bg914 { background:url(../images/disc_color.jpg) no-repeat -825px -550px!important}
+.bg915 { background:url(../images/disc_color.jpg) no-repeat -850px -550px!important}
+.bg916 { background:url(../images/disc_color.jpg) no-repeat -875px -550px!important}
+.bg917 { background:url(../images/disc_color.jpg) no-repeat -900px -550px!important}
+.bg918 { background:url(../images/disc_color.jpg) no-repeat -925px -550px!important}
+.bg919 { background:url(../images/disc_color.jpg) no-repeat -950px -550px!important}
+.bg920 { background:url(../images/disc_color.jpg) no-repeat -975px -550px!important}
+
+
+/*    FILA 24 */
+
+
+.bg921 { background:url(../images/disc_color.jpg) no-repeat 0 -575px!important}
+.bg922 { background:url(../images/disc_color.jpg) no-repeat -25px -575px!important}
+.bg923 { background:url(../images/disc_color.jpg) no-repeat -50px -575px!important}
+.bg924 { background:url(../images/disc_color.jpg) no-repeat -75px -575px!important}
+.bg925 { background:url(../images/disc_color.jpg) no-repeat -100px -575px!important}
+.bg926 { background:url(../images/disc_color.jpg) no-repeat -125px -575px!important}
+.bg927 { background:url(../images/disc_color.jpg) no-repeat -150px -575px!important}
+.bg928 { background:url(../images/disc_color.jpg) no-repeat -175px -575px!important}
+.bg929 { background:url(../images/disc_color.jpg) no-repeat -200px -575px!important}
+.bg930 { background:url(../images/disc_color.jpg) no-repeat -225px -575px!important}
+.bg931 { background:url(../images/disc_color.jpg) no-repeat -250px -575px!important}
+.bg932 { background:url(../images/disc_color.jpg) no-repeat -275px -575px!important}
+.bg933 { background:url(../images/disc_color.jpg) no-repeat -300px -575px!important}
+.bg934 { background:url(../images/disc_color.jpg) no-repeat -325px -575px!important}
+.bg935 { background:url(../images/disc_color.jpg) no-repeat -350px -575px!important}
+.bg936 { background:url(../images/disc_color.jpg) no-repeat -375px -575px!important}
+.bg937 { background:url(../images/disc_color.jpg) no-repeat -400px -575px!important}
+.bg938 { background:url(../images/disc_color.jpg) no-repeat -425px -575px!important}
+.bg939 { background:url(../images/disc_color.jpg) no-repeat -450px -575px!important}
+.bg940 { background:url(../images/disc_color.jpg) no-repeat -475px -575px!important}
+.bg941 { background:url(../images/disc_color.jpg) no-repeat -500px -575px!important}
+.bg942 { background:url(../images/disc_color.jpg) no-repeat -525px -575px!important}
+.bg943 { background:url(../images/disc_color.jpg) no-repeat -550px -575px!important}
+.bg944 { background:url(../images/disc_color.jpg) no-repeat -575px -575px!important}
+.bg945 { background:url(../images/disc_color.jpg) no-repeat -600px -575px!important}
+.bg946 { background:url(../images/disc_color.jpg) no-repeat -625px -575px!important}
+.bg947 { background:url(../images/disc_color.jpg) no-repeat -650px -575px!important}
+.bg948 { background:url(../images/disc_color.jpg) no-repeat -675px -575px!important}
+.bg949 { background:url(../images/disc_color.jpg) no-repeat -700px -575px!important}
+.bg950 { background:url(../images/disc_color.jpg) no-repeat -725px -575px!important}
+.bg951 { background:url(../images/disc_color.jpg) no-repeat -750px -575px!important}
+.bg952 { background:url(../images/disc_color.jpg) no-repeat -775px -575px!important}
+.bg953 { background:url(../images/disc_color.jpg) no-repeat -800px -575px!important}
+.bg954 { background:url(../images/disc_color.jpg) no-repeat -825px -575px!important}
+.bg955 { background:url(../images/disc_color.jpg) no-repeat -850px -575px!important}
+.bg956 { background:url(../images/disc_color.jpg) no-repeat -875px -575px!important}
+.bg957 { background:url(../images/disc_color.jpg) no-repeat -900px -575px!important}
+.bg958 { background:url(../images/disc_color.jpg) no-repeat -925px -575px!important}
+.bg959 { background:url(../images/disc_color.jpg) no-repeat -950px -575px!important}
+.bg960 { background:url(../images/disc_color.jpg) no-repeat -975px -575px!important}
+
+
+
+/*    FILA  25    */
+
+
+.bg961 { background:url(../images/disc_color.jpg) no-repeat 0 -600px!important}
+.bg962 { background:url(../images/disc_color.jpg) no-repeat -25px -600px!important}
+.bg963 { background:url(../images/disc_color.jpg) no-repeat -50px -600px!important}
+.bg964 { background:url(../images/disc_color.jpg) no-repeat -75px -600px!important}
+.bg965 { background:url(../images/disc_color.jpg) no-repeat -100px -600px!important}
+.bg966 { background:url(../images/disc_color.jpg) no-repeat -125px -600px!important}
+.bg967 { background:url(../images/disc_color.jpg) no-repeat -150px -600px!important}
+.bg968 { background:url(../images/disc_color.jpg) no-repeat -175px -600px!important}
+.bg969 { background:url(../images/disc_color.jpg) no-repeat -200px -600px!important}
+.bg970 { background:url(../images/disc_color.jpg) no-repeat -225px -600px!important}
+.bg971 { background:url(../images/disc_color.jpg) no-repeat -250px -600px!important}
+.bg972 { background:url(../images/disc_color.jpg) no-repeat -275px -600px!important}
+.bg973 { background:url(../images/disc_color.jpg) no-repeat -300px -600px!important}
+.bg974 { background:url(../images/disc_color.jpg) no-repeat -325px -600px!important}
+.bg975 { background:url(../images/disc_color.jpg) no-repeat -350px -600px!important}
+.bg976 { background:url(../images/disc_color.jpg) no-repeat -375px -600px!important}
+.bg977 { background:url(../images/disc_color.jpg) no-repeat -400px -600px!important}
+.bg978 { background:url(../images/disc_color.jpg) no-repeat -425px -600px!important}
+.bg979 { background:url(../images/disc_color.jpg) no-repeat -450px -600px!important}
+.bg980 { background:url(../images/disc_color.jpg) no-repeat -475px -600px!important}
+.bg981 { background:url(../images/disc_color.jpg) no-repeat -500px -600px!important}
+.bg982 { background:url(../images/disc_color.jpg) no-repeat -525px -600px!important}
+.bg983 { background:url(../images/disc_color.jpg) no-repeat -550px -600px!important}
+.bg984 { background:url(../images/disc_color.jpg) no-repeat -575px -600px!important}
+.bg985 { background:url(../images/disc_color.jpg) no-repeat -600px -600px!important}
+.bg986 { background:url(../images/disc_color.jpg) no-repeat -625px -600px!important}
+.bg987 { background:url(../images/disc_color.jpg) no-repeat -650px -600px!important}
+.bg988 { background:url(../images/disc_color.jpg) no-repeat -675px -600px!important}
+.bg989 { background:url(../images/disc_color.jpg) no-repeat -700px -600px!important}
+.bg990 { background:url(../images/disc_color.jpg) no-repeat -725px -600px!important}
+.bg991 { background:url(../images/disc_color.jpg) no-repeat -750px -600px!important}
+.bg992 { background:url(../images/disc_color.jpg) no-repeat -775px -600px!important}
+.bg993 { background:url(../images/disc_color.jpg) no-repeat -800px -600px!important}
+.bg994 { background:url(../images/disc_color.jpg) no-repeat -825px -600px!important}
+.bg995 { background:url(../images/disc_color.jpg) no-repeat -850px -600px!important}
+.bg996 { background:url(../images/disc_color.jpg) no-repeat -875px -600px!important}
+.bg997 { background:url(../images/disc_color.jpg) no-repeat -900px -600px!important}
+.bg998 { background:url(../images/disc_color.jpg) no-repeat -925px -600px!important}
+.bg999 { background:url(../images/disc_color.jpg) no-repeat -950px -600px!important}
+.bg1000 { background:url(../images/disc_color.jpg) no-repeat -975px -600px!important}
+
+
+/*    FILA 26   */
+
+
+.bg1001 { background:url(../images/disc_color.jpg) no-repeat 0 -625px!important}
+.bg1002 { background:url(../images/disc_color.jpg) no-repeat -25px -625px!important}
+.bg1003 { background:url(../images/disc_color.jpg) no-repeat -50px -625px!important}
+.bg1004 { background:url(../images/disc_color.jpg) no-repeat -75px -625px!important}
+.bg1005 { background:url(../images/disc_color.jpg) no-repeat -100px -625px!important}
+.bg1006 { background:url(../images/disc_color.jpg) no-repeat -125px -625px!important}
+.bg1007 { background:url(../images/disc_color.jpg) no-repeat -150px -625px!important}
+.bg1008 { background:url(../images/disc_color.jpg) no-repeat -175px -625px!important}
+.bg1009 { background:url(../images/disc_color.jpg) no-repeat -200px -625px!important}
+.bg1010 { background:url(../images/disc_color.jpg) no-repeat -225px -625px!important}
+.bg1011 { background:url(../images/disc_color.jpg) no-repeat -250px -625px!important}
+.bg1012 { background:url(../images/disc_color.jpg) no-repeat -275px -625px!important}
+.bg1013 { background:url(../images/disc_color.jpg) no-repeat -300px -625px!important}
+.bg1014 { background:url(../images/disc_color.jpg) no-repeat -325px -625px!important}
+.bg1015 { background:url(../images/disc_color.jpg) no-repeat -350px -625px!important}
+.bg1016 { background:url(../images/disc_color.jpg) no-repeat -375px -625px!important}
+.bg1017 { background:url(../images/disc_color.jpg) no-repeat -400px -625px!important}
+.bg1018 { background:url(../images/disc_color.jpg) no-repeat -425px -625px!important}
+.bg1019 { background:url(../images/disc_color.jpg) no-repeat -450px -625px!important}
+.bg1020 { background:url(../images/disc_color.jpg) no-repeat -475px -625px!important}
+.bg1021 { background:url(../images/disc_color.jpg) no-repeat -500px -625px!important}
+.bg1022 { background:url(../images/disc_color.jpg) no-repeat -525px -625px!important}
+.bg1023 { background:url(../images/disc_color.jpg) no-repeat -550px -625px!important}
+.bg1024 { background:url(../images/disc_color.jpg) no-repeat -575px -625px!important}
+.bg1025 { background:url(../images/disc_color.jpg) no-repeat -600px -625px!important}
+.bg1026 { background:url(../images/disc_color.jpg) no-repeat -625px -625px!important}
+.bg1027 { background:url(../images/disc_color.jpg) no-repeat -650px -625px!important}
+.bg1028 { background:url(../images/disc_color.jpg) no-repeat -675px -625px!important}
+.bg1029 { background:url(../images/disc_color.jpg) no-repeat -700px -625px!important}
+.bg1030 { background:url(../images/disc_color.jpg) no-repeat -725px -625px!important}
+.bg1031 { background:url(../images/disc_color.jpg) no-repeat -750px -625px!important}
+.bg1032 { background:url(../images/disc_color.jpg) no-repeat -775px -625px!important}
+.bg1033 { background:url(../images/disc_color.jpg) no-repeat -800px -625px!important}
+.bg1034 { background:url(../images/disc_color.jpg) no-repeat -825px -625px!important}
+.bg1035 { background:url(../images/disc_color.jpg) no-repeat -850px -625px!important}
+.bg1036 { background:url(../images/disc_color.jpg) no-repeat -875px -625px!important}
+.bg1037 { background:url(../images/disc_color.jpg) no-repeat -900px -625px!important}
+.bg1038 { background:url(../images/disc_color.jpg) no-repeat -925px -625px!important}
+.bg1039 { background:url(../images/disc_color.jpg) no-repeat -950px -625px!important}
+.bg1040 { background:url(../images/disc_color.jpg) no-repeat -975px -625px!important}
+
+
+/*    FILA 27 */
+
+
+.bg1041 { background:url(../images/disc_color.jpg) no-repeat 0 -650px!important}
+.bg1042 { background:url(../images/disc_color.jpg) no-repeat -25px -650px!important}
+.bg1043 { background:url(../images/disc_color.jpg) no-repeat -50px -650px!important}
+.bg1044 { background:url(../images/disc_color.jpg) no-repeat -75px -650px!important}
+.bg1045 { background:url(../images/disc_color.jpg) no-repeat -100px -650px!important}
+.bg1046 { background:url(../images/disc_color.jpg) no-repeat -125px -650px!important}
+.bg1047 { background:url(../images/disc_color.jpg) no-repeat -150px -650px!important}
+.bg1048 { background:url(../images/disc_color.jpg) no-repeat -175px -650px!important}
+.bg1049 { background:url(../images/disc_color.jpg) no-repeat -200px -650px!important}
+.bg1050 { background:url(../images/disc_color.jpg) no-repeat -225px -650px!important}
+.bg1051 { background:url(../images/disc_color.jpg) no-repeat -250px -650px!important}
+.bg1052 { background:url(../images/disc_color.jpg) no-repeat -275px -650px!important}
+.bg1053 { background:url(../images/disc_color.jpg) no-repeat -300px -650px!important}
+.bg1054 { background:url(../images/disc_color.jpg) no-repeat -325px -650px!important}
+.bg1055 { background:url(../images/disc_color.jpg) no-repeat -350px -650px!important}
+.bg1056 { background:url(../images/disc_color.jpg) no-repeat -375px -650px!important}
+.bg1057 { background:url(../images/disc_color.jpg) no-repeat -400px -650px!important}
+.bg1058 { background:url(../images/disc_color.jpg) no-repeat -425px -650px!important}
+.bg1059 { background:url(../images/disc_color.jpg) no-repeat -450px -650px!important}
+.bg1060 { background:url(../images/disc_color.jpg) no-repeat -475px -650px!important}
+.bg1061 { background:url(../images/disc_color.jpg) no-repeat -500px -650px!important}
+.bg1062 { background:url(../images/disc_color.jpg) no-repeat -525px -650px!important}
+.bg1063 { background:url(../images/disc_color.jpg) no-repeat -550px -650px!important}
+.bg1064 { background:url(../images/disc_color.jpg) no-repeat -575px -650px!important}
+.bg1065 { background:url(../images/disc_color.jpg) no-repeat -600px -650px!important}
+.bg1066 { background:url(../images/disc_color.jpg) no-repeat -625px -650px!important}
+.bg1067 { background:url(../images/disc_color.jpg) no-repeat -650px -650px!important}
+.bg1068 { background:url(../images/disc_color.jpg) no-repeat -675px -650px!important}
+.bg1069 { background:url(../images/disc_color.jpg) no-repeat -700px -650px!important}
+.bg1070 { background:url(../images/disc_color.jpg) no-repeat -725px -650px!important}
+.bg1071 { background:url(../images/disc_color.jpg) no-repeat -750px -650px!important}
+.bg1072 { background:url(../images/disc_color.jpg) no-repeat -775px -650px!important}
+.bg1073 { background:url(../images/disc_color.jpg) no-repeat -800px -650px!important}
+.bg1074 { background:url(../images/disc_color.jpg) no-repeat -825px -650px!important}
+.bg1075 { background:url(../images/disc_color.jpg) no-repeat -850px -650px!important}
+.bg1076 { background:url(../images/disc_color.jpg) no-repeat -875px -650px!important}
+.bg1077 { background:url(../images/disc_color.jpg) no-repeat -900px -650px!important}
+.bg1078 { background:url(../images/disc_color.jpg) no-repeat -925px -650px!important}
+.bg1079 { background:url(../images/disc_color.jpg) no-repeat -950px -650px!important}
+.bg1080 { background:url(../images/disc_color.jpg) no-repeat -975px -650px!important}
+
+
+
+/*    FILA 28 */
+
+
+.bg1081 { background:url(../images/disc_color.jpg) no-repeat 0 -675px!important}
+.bg1082 { background:url(../images/disc_color.jpg) no-repeat -25px -675px!important}
+.bg1083 { background:url(../images/disc_color.jpg) no-repeat -50px -675px!important}
+.bg1084 { background:url(../images/disc_color.jpg) no-repeat -75px -675px!important}
+.bg1085 { background:url(../images/disc_color.jpg) no-repeat -100px -675px!important}
+.bg1086 { background:url(../images/disc_color.jpg) no-repeat -125px -675px!important}
+.bg1087 { background:url(../images/disc_color.jpg) no-repeat -150px -675px!important}
+.bg1088 { background:url(../images/disc_color.jpg) no-repeat -175px -675px!important}
+.bg1089 { background:url(../images/disc_color.jpg) no-repeat -200px -675px!important}
+.bg1090 { background:url(../images/disc_color.jpg) no-repeat -225px -675px!important}
+.bg1091 { background:url(../images/disc_color.jpg) no-repeat -250px -675px!important}
+.bg1092 { background:url(../images/disc_color.jpg) no-repeat -275px -675px!important}
+.bg1093 { background:url(../images/disc_color.jpg) no-repeat -300px -675px!important}
+.bg1094 { background:url(../images/disc_color.jpg) no-repeat -325px -675px!important}
+.bg1095 { background:url(../images/disc_color.jpg) no-repeat -350px -675px!important}
+.bg1096 { background:url(../images/disc_color.jpg) no-repeat -375px -675px!important}
+.bg1097 { background:url(../images/disc_color.jpg) no-repeat -400px -675px!important}
+.bg1098 { background:url(../images/disc_color.jpg) no-repeat -425px -675px!important}
+.bg1099 { background:url(../images/disc_color.jpg) no-repeat -450px -675px!important}
+.bg1100 { background:url(../images/disc_color.jpg) no-repeat -475px -675px!important}
+.bg1101 { background:url(../images/disc_color.jpg) no-repeat -500px -675px!important}
+.bg1102 { background:url(../images/disc_color.jpg) no-repeat -525px -675px!important}
+.bg1103 { background:url(../images/disc_color.jpg) no-repeat -550px -675px!important}
+.bg1104 { background:url(../images/disc_color.jpg) no-repeat -575px -675px!important}
+.bg1105 { background:url(../images/disc_color.jpg) no-repeat -600px -675px!important}
+.bg1106 { background:url(../images/disc_color.jpg) no-repeat -625px -675px!important}
+.bg1107 { background:url(../images/disc_color.jpg) no-repeat -650px -675px!important}
+.bg1108 { background:url(../images/disc_color.jpg) no-repeat -675px -675px!important}
+.bg1109 { background:url(../images/disc_color.jpg) no-repeat -700px -675px!important}
+.bg1110 { background:url(../images/disc_color.jpg) no-repeat -725px -675px!important}
+.bg1111 { background:url(../images/disc_color.jpg) no-repeat -750px -675px!important}
+.bg1112 { background:url(../images/disc_color.jpg) no-repeat -775px -675px!important}
+.bg1113 { background:url(../images/disc_color.jpg) no-repeat -800px -675px!important}
+.bg1114 { background:url(../images/disc_color.jpg) no-repeat -825px -675px!important}
+.bg1115 { background:url(../images/disc_color.jpg) no-repeat -850px -675px!important}
+.bg1116 { background:url(../images/disc_color.jpg) no-repeat -875px -675px!important}
+.bg1117 { background:url(../images/disc_color.jpg) no-repeat -900px -675px!important}
+.bg1118 { background:url(../images/disc_color.jpg) no-repeat -925px -675px!important}
+.bg1119 { background:url(../images/disc_color.jpg) no-repeat -950px -675px!important}
+.bg1120 { background:url(../images/disc_color.jpg) no-repeat -975px -675px!important}
+
+
+/*    FILA 29 */
+
+
+.bg1121 { background:url(../images/disc_color.jpg) no-repeat 0 -700px!important}
+.bg1122 { background:url(../images/disc_color.jpg) no-repeat -25px -700px!important}
+.bg1123 { background:url(../images/disc_color.jpg) no-repeat -50px -700px!important}
+.bg1124 { background:url(../images/disc_color.jpg) no-repeat -75px -700px!important}
+.bg1125 { background:url(../images/disc_color.jpg) no-repeat -100px -700px!important}
+.bg1126 { background:url(../images/disc_color.jpg) no-repeat -125px -700px!important}
+.bg1127 { background:url(../images/disc_color.jpg) no-repeat -150px -700px!important}
+.bg1128 { background:url(../images/disc_color.jpg) no-repeat -175px -700px!important}
+.bg1129 { background:url(../images/disc_color.jpg) no-repeat -200px -700px!important}
+.bg1130 { background:url(../images/disc_color.jpg) no-repeat -225px -700px!important}
+.bg1131 { background:url(../images/disc_color.jpg) no-repeat -250px -700px!important}
+.bg1132 { background:url(../images/disc_color.jpg) no-repeat -275px -700px!important}
+.bg1133 { background:url(../images/disc_color.jpg) no-repeat -300px -700px!important}
+.bg1134 { background:url(../images/disc_color.jpg) no-repeat -325px -700px!important}
+.bg1135 { background:url(../images/disc_color.jpg) no-repeat -350px -700px!important}
+.bg1136 { background:url(../images/disc_color.jpg) no-repeat -375px -700px!important}
+.bg1137 { background:url(../images/disc_color.jpg) no-repeat -400px -700px!important}
+.bg1138 { background:url(../images/disc_color.jpg) no-repeat -425px -700px!important}
+.bg1139 { background:url(../images/disc_color.jpg) no-repeat -450px -700px!important}
+.bg1140 { background:url(../images/disc_color.jpg) no-repeat -475px -700px!important}
+.bg1141 { background:url(../images/disc_color.jpg) no-repeat -500px -700px!important}
+.bg1142 { background:url(../images/disc_color.jpg) no-repeat -525px -700px!important}
+.bg1143 { background:url(../images/disc_color.jpg) no-repeat -550px -700px!important}
+.bg1144 { background:url(../images/disc_color.jpg) no-repeat -575px -700px!important}
+.bg1145 { background:url(../images/disc_color.jpg) no-repeat -600px -700px!important}
+.bg1146 { background:url(../images/disc_color.jpg) no-repeat -625px -700px!important}
+.bg1147 { background:url(../images/disc_color.jpg) no-repeat -650px -700px!important}
+.bg1148 { background:url(../images/disc_color.jpg) no-repeat -675px -700px!important}
+.bg1149 { background:url(../images/disc_color.jpg) no-repeat -700px -700px!important}
+.bg1150 { background:url(../images/disc_color.jpg) no-repeat -725px -700px!important}
+.bg1151 { background:url(../images/disc_color.jpg) no-repeat -750px -700px!important}
+.bg1152 { background:url(../images/disc_color.jpg) no-repeat -775px -700px!important}
+.bg1153 { background:url(../images/disc_color.jpg) no-repeat -800px -700px!important}
+.bg1154 { background:url(../images/disc_color.jpg) no-repeat -825px -700px!important}
+.bg1155 { background:url(../images/disc_color.jpg) no-repeat -850px -700px!important}
+.bg1156 { background:url(../images/disc_color.jpg) no-repeat -875px -700px!important}
+.bg1157 { background:url(../images/disc_color.jpg) no-repeat -900px -700px!important}
+.bg1158 { background:url(../images/disc_color.jpg) no-repeat -925px -700px!important}
+.bg1159 { background:url(../images/disc_color.jpg) no-repeat -950px -700px!important}
+.bg1160 { background:url(../images/disc_color.jpg) no-repeat -975px -700px!important}
+
+
+/*     FILA 30    */
+
+
+
+.bg1161 { background:url(../images/disc_color.jpg) no-repeat 0 -725px!important}
+.bg1162 { background:url(../images/disc_color.jpg) no-repeat -25px -725px!important}
+.bg1163 { background:url(../images/disc_color.jpg) no-repeat -50px -725px!important}
+.bg1164 { background:url(../images/disc_color.jpg) no-repeat -75px -725px!important}
+.bg1165 { background:url(../images/disc_color.jpg) no-repeat -100px -725px!important}
+.bg1166 { background:url(../images/disc_color.jpg) no-repeat -125px -725px!important}
+.bg1167 { background:url(../images/disc_color.jpg) no-repeat -150px -725px!important}
+.bg1168 { background:url(../images/disc_color.jpg) no-repeat -175px -725px!important}
+.bg1169 { background:url(../images/disc_color.jpg) no-repeat -200px -725px!important}
+.bg1170 { background:url(../images/disc_color.jpg) no-repeat -225px -725px!important}
+.bg1171 { background:url(../images/disc_color.jpg) no-repeat -250px -725px!important}
+.bg1172 { background:url(../images/disc_color.jpg) no-repeat -275px -725px!important}
+.bg1173 { background:url(../images/disc_color.jpg) no-repeat -300px -725px!important}
+.bg1174 { background:url(../images/disc_color.jpg) no-repeat -325px -725px!important}
+.bg1175 { background:url(../images/disc_color.jpg) no-repeat -350px -725px!important}
+.bg1176 { background:url(../images/disc_color.jpg) no-repeat -375px -725px!important}
+.bg1177 { background:url(../images/disc_color.jpg) no-repeat -400px -725px!important}
+.bg1178 { background:url(../images/disc_color.jpg) no-repeat -425px -725px!important}
+.bg1179 { background:url(../images/disc_color.jpg) no-repeat -450px -725px!important}
+.bg1180 { background:url(../images/disc_color.jpg) no-repeat -475px -725px!important}
+.bg1181 { background:url(../images/disc_color.jpg) no-repeat -500px -725px!important}
+.bg1182 { background:url(../images/disc_color.jpg) no-repeat -525px -725px!important}
+.bg1183 { background:url(../images/disc_color.jpg) no-repeat -550px -725px!important}
+.bg1184 { background:url(../images/disc_color.jpg) no-repeat -575px -725px!important}
+.bg1185 { background:url(../images/disc_color.jpg) no-repeat -600px -725px!important}
+.bg1186 { background:url(../images/disc_color.jpg) no-repeat -625px -725px!important}
+.bg1187 { background:url(../images/disc_color.jpg) no-repeat -650px -725px!important}
+.bg1188 { background:url(../images/disc_color.jpg) no-repeat -675px -725px!important}
+.bg1189 { background:url(../images/disc_color.jpg) no-repeat -700px -725px!important}
+.bg1190 { background:url(../images/disc_color.jpg) no-repeat -725px -725px!important}
+.bg1191 { background:url(../images/disc_color.jpg) no-repeat -750px -725px!important}
+.bg1192 { background:url(../images/disc_color.jpg) no-repeat -775px -725px!important}
+.bg1193 { background:url(../images/disc_color.jpg) no-repeat -800px -725px!important}
+.bg1194 { background:url(../images/disc_color.jpg) no-repeat -825px -725px!important}
+.bg1195 { background:url(../images/disc_color.jpg) no-repeat -850px -725px!important}
+.bg1196 { background:url(../images/disc_color.jpg) no-repeat -875px -725px!important}
+.bg1197 { background:url(../images/disc_color.jpg) no-repeat -900px -725px!important}
+.bg1198 { background:url(../images/disc_color.jpg) no-repeat -925px -725px!important}
+.bg1199 { background:url(../images/disc_color.jpg) no-repeat -950px -725px!important}
+.bg1200 { background:url(../images/disc_color.jpg) no-repeat -975px -725px!important}
+
+
+/*    FILA 26   */
+
+
+.bg1201 { background:url(../images/disc_color.jpg) no-repeat 0 -750px!important}
+.bg1202 { background:url(../images/disc_color.jpg) no-repeat -25px -750px!important}
+.bg1203 { background:url(../images/disc_color.jpg) no-repeat -50px -750px!important}
+.bg1204 { background:url(../images/disc_color.jpg) no-repeat -75px -750px!important}
+.bg1205 { background:url(../images/disc_color.jpg) no-repeat -100px -750px!important}
+.bg1206 { background:url(../images/disc_color.jpg) no-repeat -125px -750px!important}
+.bg1207 { background:url(../images/disc_color.jpg) no-repeat -150px -750px!important}
+.bg1208 { background:url(../images/disc_color.jpg) no-repeat -175px -750px!important}
+.bg1209 { background:url(../images/disc_color.jpg) no-repeat -200px -750px!important}
+.bg1210 { background:url(../images/disc_color.jpg) no-repeat -225px -750px!important}
+.bg1211 { background:url(../images/disc_color.jpg) no-repeat -250px -750px!important}
+.bg1212 { background:url(../images/disc_color.jpg) no-repeat -275px -750px!important}
+.bg1213 { background:url(../images/disc_color.jpg) no-repeat -300px -750px!important}
+.bg1214 { background:url(../images/disc_color.jpg) no-repeat -325px -750px!important}
+.bg1215 { background:url(../images/disc_color.jpg) no-repeat -350px -750px!important}
+.bg1216 { background:url(../images/disc_color.jpg) no-repeat -375px -750px!important}
+.bg1217 { background:url(../images/disc_color.jpg) no-repeat -400px -750px!important}
+.bg1218 { background:url(../images/disc_color.jpg) no-repeat -425px -750px!important}
+.bg1219 { background:url(../images/disc_color.jpg) no-repeat -450px -750px!important}
+.bg1220 { background:url(../images/disc_color.jpg) no-repeat -475px -750px!important}
+.bg1221 { background:url(../images/disc_color.jpg) no-repeat -500px -750px!important}
+.bg1222 { background:url(../images/disc_color.jpg) no-repeat -525px -750px!important}
+.bg1223 { background:url(../images/disc_color.jpg) no-repeat -550px -750px!important}
+.bg1224 { background:url(../images/disc_color.jpg) no-repeat -575px -750px!important}
+.bg1225 { background:url(../images/disc_color.jpg) no-repeat -600px -750px!important}
+.bg1226 { background:url(../images/disc_color.jpg) no-repeat -625px -750px!important}
+.bg1227 { background:url(../images/disc_color.jpg) no-repeat -650px -750px!important}
+.bg1228 { background:url(../images/disc_color.jpg) no-repeat -675px -750px!important}
+.bg1229 { background:url(../images/disc_color.jpg) no-repeat -700px -750px!important}
+.bg1230 { background:url(../images/disc_color.jpg) no-repeat -725px -750px!important}
+.bg1231 { background:url(../images/disc_color.jpg) no-repeat -750px -750px!important}
+.bg1232 { background:url(../images/disc_color.jpg) no-repeat -775px -750px!important}
+.bg1233 { background:url(../images/disc_color.jpg) no-repeat -800px -750px!important}
+.bg1234 { background:url(../images/disc_color.jpg) no-repeat -825px -750px!important}
+.bg1235 { background:url(../images/disc_color.jpg) no-repeat -850px -750px!important}
+.bg1236 { background:url(../images/disc_color.jpg) no-repeat -875px -750px!important}
+.bg1237 { background:url(../images/disc_color.jpg) no-repeat -900px -750px!important}
+.bg1238 { background:url(../images/disc_color.jpg) no-repeat -925px -750px!important}
+.bg1239 { background:url(../images/disc_color.jpg) no-repeat -950px -750px!important}
+.bg1240 { background:url(../images/disc_color.jpg) no-repeat -975px -750px!important}
+
+
+/*    FILA 27 */
+
+
+.bg1241 { background:url(../images/disc_color.jpg) no-repeat 0 -775px!important}
+.bg1242 { background:url(../images/disc_color.jpg) no-repeat -25px -775px!important}
+.bg1243 { background:url(../images/disc_color.jpg) no-repeat -50px -775px!important}
+.bg1244 { background:url(../images/disc_color.jpg) no-repeat -75px -775px!important}
+.bg1245 { background:url(../images/disc_color.jpg) no-repeat -100px -775px!important}
+.bg1246 { background:url(../images/disc_color.jpg) no-repeat -125px -775px!important}
+.bg1247 { background:url(../images/disc_color.jpg) no-repeat -150px -775px!important}
+.bg1248 { background:url(../images/disc_color.jpg) no-repeat -175px -775px!important}
+.bg1249 { background:url(../images/disc_color.jpg) no-repeat -200px -775px!important}
+.bg1250 { background:url(../images/disc_color.jpg) no-repeat -225px -775px!important}
+.bg1251 { background:url(../images/disc_color.jpg) no-repeat -250px -775px!important}
+.bg1252 { background:url(../images/disc_color.jpg) no-repeat -275px -775px!important}
+.bg1253 { background:url(../images/disc_color.jpg) no-repeat -300px -775px!important}
+.bg1254 { background:url(../images/disc_color.jpg) no-repeat -325px -775px!important}
+.bg1255 { background:url(../images/disc_color.jpg) no-repeat -350px -775px!important}
+.bg1256 { background:url(../images/disc_color.jpg) no-repeat -375px -775px!important}
+.bg1257 { background:url(../images/disc_color.jpg) no-repeat -400px -775px!important}
+.bg1258 { background:url(../images/disc_color.jpg) no-repeat -425px -775px!important}
+.bg1259 { background:url(../images/disc_color.jpg) no-repeat -450px -775px!important}
+.bg1260 { background:url(../images/disc_color.jpg) no-repeat -475px -775px!important}
+.bg1261 { background:url(../images/disc_color.jpg) no-repeat -500px -775px!important}
+.bg1262 { background:url(../images/disc_color.jpg) no-repeat -525px -775px!important}
+.bg1263 { background:url(../images/disc_color.jpg) no-repeat -550px -775px!important}
+.bg1264 { background:url(../images/disc_color.jpg) no-repeat -575px -775px!important}
+.bg1265 { background:url(../images/disc_color.jpg) no-repeat -600px -775px!important}
+.bg1266 { background:url(../images/disc_color.jpg) no-repeat -625px -775px!important}
+.bg1267 { background:url(../images/disc_color.jpg) no-repeat -650px -775px!important}
+.bg1268 { background:url(../images/disc_color.jpg) no-repeat -675px -775px!important}
+.bg1269 { background:url(../images/disc_color.jpg) no-repeat -700px -775px!important}
+.bg1270 { background:url(../images/disc_color.jpg) no-repeat -725px -775px!important}
+.bg1271 { background:url(../images/disc_color.jpg) no-repeat -750px -775px!important}
+.bg1272 { background:url(../images/disc_color.jpg) no-repeat -775px -775px!important}
+.bg1273 { background:url(../images/disc_color.jpg) no-repeat -800px -775px!important}
+.bg1274 { background:url(../images/disc_color.jpg) no-repeat -825px -775px!important}
+.bg1275 { background:url(../images/disc_color.jpg) no-repeat -850px -775px!important}
+.bg1276 { background:url(../images/disc_color.jpg) no-repeat -875px -775px!important}
+.bg1277 { background:url(../images/disc_color.jpg) no-repeat -900px -775px!important}
+.bg1278 { background:url(../images/disc_color.jpg) no-repeat -925px -775px!important}
+.bg1279 { background:url(../images/disc_color.jpg) no-repeat -950px -775px!important}
+.bg1280 { background:url(../images/disc_color.jpg) no-repeat -975px -775px!important}
+
+
+
+/*    FILA 28 */
+
+
+.bg1281 { background:url(../images/disc_color.jpg) no-repeat 0 -800px!important}
+.bg1282 { background:url(../images/disc_color.jpg) no-repeat -25px -800px!important}
+.bg1283 { background:url(../images/disc_color.jpg) no-repeat -50px -800px!important}
+.bg1284 { background:url(../images/disc_color.jpg) no-repeat -75px -800px!important}
+.bg1285 { background:url(../images/disc_color.jpg) no-repeat -100px -800px!important}
+.bg1286 { background:url(../images/disc_color.jpg) no-repeat -125px -800px!important}
+.bg1287 { background:url(../images/disc_color.jpg) no-repeat -150px -800px!important}
+.bg1288 { background:url(../images/disc_color.jpg) no-repeat -175px -800px!important}
+.bg1289 { background:url(../images/disc_color.jpg) no-repeat -200px -800px!important}
+.bg1290 { background:url(../images/disc_color.jpg) no-repeat -225px -800px!important}
+.bg1291 { background:url(../images/disc_color.jpg) no-repeat -250px -800px!important}
+.bg1292 { background:url(../images/disc_color.jpg) no-repeat -275px -800px!important}
+.bg1293 { background:url(../images/disc_color.jpg) no-repeat -300px -800px!important}
+.bg1294 { background:url(../images/disc_color.jpg) no-repeat -325px -800px!important}
+.bg1295 { background:url(../images/disc_color.jpg) no-repeat -350px -800px!important}
+.bg1296 { background:url(../images/disc_color.jpg) no-repeat -375px -800px!important}
+.bg1297 { background:url(../images/disc_color.jpg) no-repeat -400px -800px!important}
+.bg1298 { background:url(../images/disc_color.jpg) no-repeat -425px -800px!important}
+.bg1299 { background:url(../images/disc_color.jpg) no-repeat -450px -800px!important}
+.bg1300 { background:url(../images/disc_color.jpg) no-repeat -475px -800px!important}
+.bg1301 { background:url(../images/disc_color.jpg) no-repeat -500px -800px!important}
+.bg1302 { background:url(../images/disc_color.jpg) no-repeat -525px -800px!important}
+.bg1303 { background:url(../images/disc_color.jpg) no-repeat -550px -800px!important}
+.bg1304 { background:url(../images/disc_color.jpg) no-repeat -575px -800px!important}
+.bg1305 { background:url(../images/disc_color.jpg) no-repeat -600px -800px!important}
+.bg1306 { background:url(../images/disc_color.jpg) no-repeat -625px -800px!important}
+.bg1307 { background:url(../images/disc_color.jpg) no-repeat -650px -800px!important}
+.bg1308 { background:url(../images/disc_color.jpg) no-repeat -675px -800px!important}
+.bg1309 { background:url(../images/disc_color.jpg) no-repeat -700px -800px!important}
+.bg1310 { background:url(../images/disc_color.jpg) no-repeat -725px -800px!important}
+.bg1311 { background:url(../images/disc_color.jpg) no-repeat -750px -800px!important}
+.bg1312 { background:url(../images/disc_color.jpg) no-repeat -775px -800px!important}
+.bg1313 { background:url(../images/disc_color.jpg) no-repeat -800px -800px!important}
+.bg1314 { background:url(../images/disc_color.jpg) no-repeat -825px -800px!important}
+.bg1315 { background:url(../images/disc_color.jpg) no-repeat -850px -800px!important}
+.bg1316 { background:url(../images/disc_color.jpg) no-repeat -875px -800px!important}
+.bg1317 { background:url(../images/disc_color.jpg) no-repeat -900px -800px!important}
+.bg1318 { background:url(../images/disc_color.jpg) no-repeat -925px -800px!important}
+.bg1319 { background:url(../images/disc_color.jpg) no-repeat -950px -800px!important}
+.bg1320 { background:url(../images/disc_color.jpg) no-repeat -975px -800px!important}
+
+
+/*    FILA 29 */
+
+
+.bg1321 { background:url(../images/disc_color.jpg) no-repeat 0 -825px!important}
+.bg1322 { background:url(../images/disc_color.jpg) no-repeat -25px -825px!important}
+.bg1323 { background:url(../images/disc_color.jpg) no-repeat -50px -825px!important}
+.bg1324 { background:url(../images/disc_color.jpg) no-repeat -75px -825px!important}
+.bg1325 { background:url(../images/disc_color.jpg) no-repeat -100px -825px!important}
+.bg1326 { background:url(../images/disc_color.jpg) no-repeat -125px -825px!important}
+.bg1327 { background:url(../images/disc_color.jpg) no-repeat -150px -825px!important}
+.bg1328 { background:url(../images/disc_color.jpg) no-repeat -175px -825px!important}
+.bg1329 { background:url(../images/disc_color.jpg) no-repeat -200px -825px!important}
+.bg1330 { background:url(../images/disc_color.jpg) no-repeat -225px -825px!important}
+.bg1331 { background:url(../images/disc_color.jpg) no-repeat -250px -825px!important}
+.bg1332 { background:url(../images/disc_color.jpg) no-repeat -275px -825px!important}
+.bg1333 { background:url(../images/disc_color.jpg) no-repeat -300px -825px!important}
+.bg1334 { background:url(../images/disc_color.jpg) no-repeat -325px -825px!important}
+.bg1335 { background:url(../images/disc_color.jpg) no-repeat -350px -825px!important}
+.bg1336 { background:url(../images/disc_color.jpg) no-repeat -375px -825px!important}
+.bg1337 { background:url(../images/disc_color.jpg) no-repeat -400px -825px!important}
+.bg1338 { background:url(../images/disc_color.jpg) no-repeat -425px -825px!important}
+.bg1339 { background:url(../images/disc_color.jpg) no-repeat -450px -825px!important}
+.bg1340 { background:url(../images/disc_color.jpg) no-repeat -475px -825px!important}
+.bg1341 { background:url(../images/disc_color.jpg) no-repeat -500px -825px!important}
+.bg1342 { background:url(../images/disc_color.jpg) no-repeat -525px -825px!important}
+.bg1343 { background:url(../images/disc_color.jpg) no-repeat -550px -825px!important}
+.bg1344 { background:url(../images/disc_color.jpg) no-repeat -575px -825px!important}
+.bg1345 { background:url(../images/disc_color.jpg) no-repeat -600px -825px!important}
+.bg1346 { background:url(../images/disc_color.jpg) no-repeat -625px -825px!important}
+.bg1347 { background:url(../images/disc_color.jpg) no-repeat -650px -825px!important}
+.bg1348 { background:url(../images/disc_color.jpg) no-repeat -675px -825px!important}
+.bg1349 { background:url(../images/disc_color.jpg) no-repeat -700px -825px!important}
+.bg1350 { background:url(../images/disc_color.jpg) no-repeat -725px -825px!important}
+.bg1351 { background:url(../images/disc_color.jpg) no-repeat -750px -825px!important}
+.bg1352 { background:url(../images/disc_color.jpg) no-repeat -775px -825px!important}
+.bg1353 { background:url(../images/disc_color.jpg) no-repeat -800px -825px!important}
+.bg1354 { background:url(../images/disc_color.jpg) no-repeat -825px -825px!important}
+.bg1355 { background:url(../images/disc_color.jpg) no-repeat -850px -825px!important}
+.bg1356 { background:url(../images/disc_color.jpg) no-repeat -875px -825px!important}
+.bg1357 { background:url(../images/disc_color.jpg) no-repeat -900px -825px!important}
+.bg1358 { background:url(../images/disc_color.jpg) no-repeat -925px -825px!important}
+.bg1359 { background:url(../images/disc_color.jpg) no-repeat -950px -825px!important}
+.bg1360 { background:url(../images/disc_color.jpg) no-repeat -975px -825px!important}
+
+
+
+
+.bg1361 { background:url(../images/disc_color.jpg) no-repeat 0 -850px!important}
+.bg1362 { background:url(../images/disc_color.jpg) no-repeat -25px -850px!important}
+.bg1363 { background:url(../images/disc_color.jpg) no-repeat -50px -850px!important}
+.bg1364 { background:url(../images/disc_color.jpg) no-repeat -75px -850px!important}
+.bg1365 { background:url(../images/disc_color.jpg) no-repeat -100px -850px!important}
+.bg1366 { background:url(../images/disc_color.jpg) no-repeat -125px -850px!important}
+.bg1367 { background:url(../images/disc_color.jpg) no-repeat -150px -850px!important}
+.bg1368 { background:url(../images/disc_color.jpg) no-repeat -175px -850px!important}
+.bg1369 { background:url(../images/disc_color.jpg) no-repeat -200px -850px!important}
+.bg1370 { background:url(../images/disc_color.jpg) no-repeat -225px -850px!important}
+.bg1371 { background:url(../images/disc_color.jpg) no-repeat -250px -850px!important}
+.bg1372 { background:url(../images/disc_color.jpg) no-repeat -275px -850px!important}
+.bg1373 { background:url(../images/disc_color.jpg) no-repeat -300px -850px!important}
+.bg1374 { background:url(../images/disc_color.jpg) no-repeat -325px -850px!important}
+.bg1375 { background:url(../images/disc_color.jpg) no-repeat -350px -850px!important}
+.bg1376 { background:url(../images/disc_color.jpg) no-repeat -375px -850px!important}
+.bg1377 { background:url(../images/disc_color.jpg) no-repeat -400px -850px!important}
+.bg1378 { background:url(../images/disc_color.jpg) no-repeat -425px -850px!important}
+.bg1379 { background:url(../images/disc_color.jpg) no-repeat -450px -850px!important}
+.bg1380 { background:url(../images/disc_color.jpg) no-repeat -475px -850px!important}
+.bg1381 { background:url(../images/disc_color.jpg) no-repeat -500px -850px!important}
+.bg1382 { background:url(../images/disc_color.jpg) no-repeat -525px -850px!important}
+.bg1383 { background:url(../images/disc_color.jpg) no-repeat -550px -850px!important}
+.bg1384 { background:url(../images/disc_color.jpg) no-repeat -575px -850px!important}
+.bg1385 { background:url(../images/disc_color.jpg) no-repeat -600px -850px!important}
+.bg1386 { background:url(../images/disc_color.jpg) no-repeat -625px -850px!important}
+.bg1387 { background:url(../images/disc_color.jpg) no-repeat -650px -850px!important}
+.bg1388 { background:url(../images/disc_color.jpg) no-repeat -675px -850px!important}
+.bg1389 { background:url(../images/disc_color.jpg) no-repeat -700px -850px!important}
+.bg1390 { background:url(../images/disc_color.jpg) no-repeat -725px -850px!important}
+.bg1391 { background:url(../images/disc_color.jpg) no-repeat -750px -850px!important}
+.bg1392 { background:url(../images/disc_color.jpg) no-repeat -775px -850px!important}
+.bg1393 { background:url(../images/disc_color.jpg) no-repeat -800px -850px!important}
+.bg1394 { background:url(../images/disc_color.jpg) no-repeat -825px -850px!important}
+.bg1395 { background:url(../images/disc_color.jpg) no-repeat -850px -850px!important}
+.bg1396 { background:url(../images/disc_color.jpg) no-repeat -875px -850px!important}
+.bg1397 { background:url(../images/disc_color.jpg) no-repeat -900px -850px!important}
+.bg1398 { background:url(../images/disc_color.jpg) no-repeat -925px -850px!important}
+.bg1399 { background:url(../images/disc_color.jpg) no-repeat -950px -850px!important}
+.bg1400 { background:url(../images/disc_color.jpg) no-repeat -975px -850px!important}
+
+
+.bg1401 { background:url(../images/disc_color.jpg) no-repeat 0 -875px!important}
+.bg1402 { background:url(../images/disc_color.jpg) no-repeat -25px -875px!important}
+.bg1403 { background:url(../images/disc_color.jpg) no-repeat -50px -875px!important}
+.bg1404 { background:url(../images/disc_color.jpg) no-repeat -75px -875px!important}
+.bg1405 { background:url(../images/disc_color.jpg) no-repeat -100px -875px!important}
+.bg1406 { background:url(../images/disc_color.jpg) no-repeat -125px -875px!important}
+.bg1407 { background:url(../images/disc_color.jpg) no-repeat -150px -875px!important}
+.bg1408 { background:url(../images/disc_color.jpg) no-repeat -175px -875px!important}
+.bg1409 { background:url(../images/disc_color.jpg) no-repeat -200px -875px!important}
+.bg1410 { background:url(../images/disc_color.jpg) no-repeat -225px -875px!important}
+.bg1411 { background:url(../images/disc_color.jpg) no-repeat -250px -875px!important}
+.bg1412 { background:url(../images/disc_color.jpg) no-repeat -275px -875px!important}
+.bg1413 { background:url(../images/disc_color.jpg) no-repeat -300px -875px!important}
+.bg1414 { background:url(../images/disc_color.jpg) no-repeat -325px -875px!important}
+.bg1415 { background:url(../images/disc_color.jpg) no-repeat -350px -875px!important}
+.bg1416 { background:url(../images/disc_color.jpg) no-repeat -375px -875px!important}
+.bg1417 { background:url(../images/disc_color.jpg) no-repeat -400px -875px!important}
+.bg1418 { background:url(../images/disc_color.jpg) no-repeat -425px -875px!important}
+.bg1419 { background:url(../images/disc_color.jpg) no-repeat -450px -875px!important}
+.bg1420 { background:url(../images/disc_color.jpg) no-repeat -475px -875px!important}
+.bg1421 { background:url(../images/disc_color.jpg) no-repeat -500px -875px!important}
+.bg1422 { background:url(../images/disc_color.jpg) no-repeat -525px -875px!important}
+.bg1423 { background:url(../images/disc_color.jpg) no-repeat -550px -875px!important}
+.bg1424 { background:url(../images/disc_color.jpg) no-repeat -575px -875px!important}
+.bg1425 { background:url(../images/disc_color.jpg) no-repeat -600px -875px!important}
+.bg1426 { background:url(../images/disc_color.jpg) no-repeat -625px -875px!important}
+.bg1427 { background:url(../images/disc_color.jpg) no-repeat -650px -875px!important}
+.bg1428 { background:url(../images/disc_color.jpg) no-repeat -675px -875px!important}
+.bg1429 { background:url(../images/disc_color.jpg) no-repeat -700px -875px!important}
+.bg1430 { background:url(../images/disc_color.jpg) no-repeat -725px -875px!important}
+.bg1431 { background:url(../images/disc_color.jpg) no-repeat -750px -875px!important}
+.bg1432 { background:url(../images/disc_color.jpg) no-repeat -775px -875px!important}
+.bg1433 { background:url(../images/disc_color.jpg) no-repeat -800px -875px!important}
+.bg1434 { background:url(../images/disc_color.jpg) no-repeat -825px -875px!important}
+.bg1435 { background:url(../images/disc_color.jpg) no-repeat -850px -875px!important}
+.bg1436 { background:url(../images/disc_color.jpg) no-repeat -875px -875px!important}
+.bg1437 { background:url(../images/disc_color.jpg) no-repeat -900px -875px!important}
+.bg1438 { background:url(../images/disc_color.jpg) no-repeat -925px -875px!important}
+.bg1439 { background:url(../images/disc_color.jpg) no-repeat -950px -875px!important}
+.bg1440 { background:url(../images/disc_color.jpg) no-repeat -975px -875px!important}
+
+
+/*    FILA 27 */
+
+
+.bg1441 { background:url(../images/disc_color.jpg) no-repeat 0 -900px!important}
+.bg1442 { background:url(../images/disc_color.jpg) no-repeat -25px -900px!important}
+.bg1443 { background:url(../images/disc_color.jpg) no-repeat -50px -900px!important}
+.bg1444 { background:url(../images/disc_color.jpg) no-repeat -75px -900px!important}
+.bg1445 { background:url(../images/disc_color.jpg) no-repeat -100px -900px!important}
+.bg1446 { background:url(../images/disc_color.jpg) no-repeat -125px -900px!important}
+.bg1447 { background:url(../images/disc_color.jpg) no-repeat -150px -900px!important}
+.bg1448 { background:url(../images/disc_color.jpg) no-repeat -175px -900px!important}
+.bg1449 { background:url(../images/disc_color.jpg) no-repeat -200px -900px!important}
+.bg1450 { background:url(../images/disc_color.jpg) no-repeat -225px -900px!important}
+.bg1451 { background:url(../images/disc_color.jpg) no-repeat -250px -900px!important}
+.bg1452 { background:url(../images/disc_color.jpg) no-repeat -275px -900px!important}
+.bg1453 { background:url(../images/disc_color.jpg) no-repeat -300px -900px!important}
+.bg1454 { background:url(../images/disc_color.jpg) no-repeat -325px -900px!important}
+.bg1455 { background:url(../images/disc_color.jpg) no-repeat -350px -900px!important}
+.bg1456 { background:url(../images/disc_color.jpg) no-repeat -375px -900px!important}
+.bg1457 { background:url(../images/disc_color.jpg) no-repeat -400px -900px!important}
+.bg1458 { background:url(../images/disc_color.jpg) no-repeat -425px -900px!important}
+.bg1459 { background:url(../images/disc_color.jpg) no-repeat -450px -900px!important}
+.bg1460 { background:url(../images/disc_color.jpg) no-repeat -475px -900px!important}
+.bg1461 { background:url(../images/disc_color.jpg) no-repeat -500px -900px!important}
+.bg1462 { background:url(../images/disc_color.jpg) no-repeat -525px -900px!important}
+.bg1463 { background:url(../images/disc_color.jpg) no-repeat -550px -900px!important}
+.bg1464 { background:url(../images/disc_color.jpg) no-repeat -575px -900px!important}
+.bg1465 { background:url(../images/disc_color.jpg) no-repeat -600px -900px!important}
+.bg1466 { background:url(../images/disc_color.jpg) no-repeat -625px -900px!important}
+.bg1467 { background:url(../images/disc_color.jpg) no-repeat -650px -900px!important}
+.bg1468 { background:url(../images/disc_color.jpg) no-repeat -675px -900px!important}
+.bg1469 { background:url(../images/disc_color.jpg) no-repeat -700px -900px!important}
+.bg1470 { background:url(../images/disc_color.jpg) no-repeat -725px -900px!important}
+.bg1471 { background:url(../images/disc_color.jpg) no-repeat -750px -900px!important}
+.bg1472 { background:url(../images/disc_color.jpg) no-repeat -775px -900px!important}
+.bg1473 { background:url(../images/disc_color.jpg) no-repeat -800px -900px!important}
+
+.bg1474 { background:url(../images/disc_color.jpg) no-repeat -825px -900px!important}
+.bg1475 { background:url(../images/disc_color.jpg) no-repeat -850px -900px!important}
+.bg1476 { background:url(../images/disc_color.jpg) no-repeat -875px -900px!important}
+.bg1477 { background:url(../images/disc_color.jpg) no-repeat -900px -900px!important}
+.bg1478 { background:url(../images/disc_color.jpg) no-repeat -925px -900px!important}
+.bg1479 { background:url(../images/disc_color.jpg) no-repeat -950px -900px!important}
+.bg1480 { background:url(../images/disc_color.jpg) no-repeat -975px -900px!important}
+
+
+
+/*    FILA 28 */
+
+
+.bg1481 { background:url(../images/disc_color.jpg) no-repeat 0 -925px!important}
+.bg1482 { background:url(../images/disc_color.jpg) no-repeat -25px -925px!important}
+.bg1483 { background:url(../images/disc_color.jpg) no-repeat -50px -925px!important}
+.bg1484 { background:url(../images/disc_color.jpg) no-repeat -75px -925px!important}
+.bg1485 { background:url(../images/disc_color.jpg) no-repeat -100px -925px!important}
+.bg1486 { background:url(../images/disc_color.jpg) no-repeat -125px -925px!important}
+.bg1487 { background:url(../images/disc_color.jpg) no-repeat -150px -925px!important}
+.bg1488 { background:url(../images/disc_color.jpg) no-repeat -175px -925px!important}
+.bg1489 { background:url(../images/disc_color.jpg) no-repeat -200px -925px!important}
+.bg1490 { background:url(../images/disc_color.jpg) no-repeat -225px -925px!important}
+.bg1491 { background:url(../images/disc_color.jpg) no-repeat -250px -925px!important}
+.bg1492 { background:url(../images/disc_color.jpg) no-repeat -275px -925px!important}
+.bg1493 { background:url(../images/disc_color.jpg) no-repeat -300px -925px!important}
+.bg1494 { background:url(../images/disc_color.jpg) no-repeat -325px -925px!important}
+.bg1495 { background:url(../images/disc_color.jpg) no-repeat -350px -925px!important}
+.bg1496 { background:url(../images/disc_color.jpg) no-repeat -375px -925px!important}
+.bg1497 { background:url(../images/disc_color.jpg) no-repeat -400px -925px!important}
+.bg1498 { background:url(../images/disc_color.jpg) no-repeat -425px -925px!important}
+.bg1499 { background:url(../images/disc_color.jpg) no-repeat -450px -925px!important}
+.bg1500 { background:url(../images/disc_color.jpg) no-repeat -475px -925px!important}
+.bg1501 { background:url(../images/disc_color.jpg) no-repeat -500px -925px!important}
+.bg1502 { background:url(../images/disc_color.jpg) no-repeat -525px -925px!important}
+.bg1503 { background:url(../images/disc_color.jpg) no-repeat -550px -925px!important}
+.bg1504 { background:url(../images/disc_color.jpg) no-repeat -575px -925px!important}
+.bg1505 { background:url(../images/disc_color.jpg) no-repeat -600px -925px!important}
+.bg1506 { background:url(../images/disc_color.jpg) no-repeat -625px -925px!important}
+.bg1507 { background:url(../images/disc_color.jpg) no-repeat -650px -925px!important}
+.bg1508 { background:url(../images/disc_color.jpg) no-repeat -675px -925px!important}
+.bg1509 { background:url(../images/disc_color.jpg) no-repeat -700px -925px!important}
+.bg1510 { background:url(../images/disc_color.jpg) no-repeat -725px -925px!important}
+.bg1511 { background:url(../images/disc_color.jpg) no-repeat -750px -925px!important}
+.bg1512 { background:url(../images/disc_color.jpg) no-repeat -775px -925px!important}
+.bg1513 { background:url(../images/disc_color.jpg) no-repeat -800px -925px!important}
+.bg1514 { background:url(../images/disc_color.jpg) no-repeat -825px -925px!important}
+.bg1515 { background:url(../images/disc_color.jpg) no-repeat -850px -925px!important}
+.bg1516 { background:url(../images/disc_color.jpg) no-repeat -875px -925px!important}
+.bg1517 { background:url(../images/disc_color.jpg) no-repeat -900px -925px!important}
+.bg1518 { background:url(../images/disc_color.jpg) no-repeat -925px -925px!important}
+.bg1519 { background:url(../images/disc_color.jpg) no-repeat -950px -925px!important}
+.bg1520 { background:url(../images/disc_color.jpg) no-repeat -975px -925px!important}
+
+
+/*    FILA 29 */
+
+
+.bg1521 { background:url(../images/disc_color.jpg) no-repeat 0 -950px!important}
+.bg1522 { background:url(../images/disc_color.jpg) no-repeat -25px -950px!important}
+.bg1523 { background:url(../images/disc_color.jpg) no-repeat -50px -950px!important}
+.bg1524 { background:url(../images/disc_color.jpg) no-repeat -75px -950px!important}
+.bg1525 { background:url(../images/disc_color.jpg) no-repeat -100px -950px!important}
+.bg1526 { background:url(../images/disc_color.jpg) no-repeat -125px -950px!important}
+.bg1527 { background:url(../images/disc_color.jpg) no-repeat -150px -950px!important}
+.bg1528 { background:url(../images/disc_color.jpg) no-repeat -175px -950px!important}
+.bg1529 { background:url(../images/disc_color.jpg) no-repeat -200px -950px!important}
+.bg1530 { background:url(../images/disc_color.jpg) no-repeat -225px -950px!important}
+.bg1531 { background:url(../images/disc_color.jpg) no-repeat -250px -950px!important}
+.bg1532 { background:url(../images/disc_color.jpg) no-repeat -275px -950px!important}
+.bg1533 { background:url(../images/disc_color.jpg) no-repeat -300px -950px!important}
+.bg1534 { background:url(../images/disc_color.jpg) no-repeat -325px -950px!important}
+.bg1535 { background:url(../images/disc_color.jpg) no-repeat -350px -950px!important}
+.bg1536 { background:url(../images/disc_color.jpg) no-repeat -375px -950px!important}
+.bg1537 { background:url(../images/disc_color.jpg) no-repeat -400px -950px!important}
+.bg1538 { background:url(../images/disc_color.jpg) no-repeat -425px -950px!important}
+.bg1539 { background:url(../images/disc_color.jpg) no-repeat -450px -950px!important}
+.bg1540 { background:url(../images/disc_color.jpg) no-repeat -475px -950px!important}
+.bg1541 { background:url(../images/disc_color.jpg) no-repeat -500px -950px!important}
+.bg1542 { background:url(../images/disc_color.jpg) no-repeat -525px -950px!important}
+.bg1543 { background:url(../images/disc_color.jpg) no-repeat -550px -950px!important}
+.bg1544 { background:url(../images/disc_color.jpg) no-repeat -575px -950px!important}
+.bg1545 { background:url(../images/disc_color.jpg) no-repeat -600px -950px!important}
+.bg1546 { background:url(../images/disc_color.jpg) no-repeat -625px -950px!important}
+.bg1547 { background:url(../images/disc_color.jpg) no-repeat -650px -950px!important}
+.bg1548 { background:url(../images/disc_color.jpg) no-repeat -675px -950px!important}
+.bg1549 { background:url(../images/disc_color.jpg) no-repeat -700px -950px!important}
+.bg1550 { background:url(../images/disc_color.jpg) no-repeat -725px -950px!important}
+.bg1551 { background:url(../images/disc_color.jpg) no-repeat -750px -950px!important}
+.bg1552 { background:url(../images/disc_color.jpg) no-repeat -775px -950px!important}
+.bg1553 { background:url(../images/disc_color.jpg) no-repeat -800px -950px!important}
+.bg1554 { background:url(../images/disc_color.jpg) no-repeat -825px -950px!important}
+.bg1555 { background:url(../images/disc_color.jpg) no-repeat -850px -950px!important}
+.bg1556 { background:url(../images/disc_color.jpg) no-repeat -875px -950px!important}
+.bg1557 { background:url(../images/disc_color.jpg) no-repeat -900px -950px!important}
+.bg1558 { background:url(../images/disc_color.jpg) no-repeat -925px -950px!important}
+.bg1559 { background:url(../images/disc_color.jpg) no-repeat -950px -950px!important}
+.bg1560 { background:url(../images/disc_color.jpg) no-repeat -975px -950px!important}
+
+
+
+
+.bg1561 { background:url(../images/disc_color.jpg) no-repeat 0 -975px!important}
+.bg1562 { background:url(../images/disc_color.jpg) no-repeat -25px -975px!important}
+.bg1563 { background:url(../images/disc_color.jpg) no-repeat -50px -975px!important}
+.bg1564 { background:url(../images/disc_color.jpg) no-repeat -75px -975px!important}
+.bg1565 { background:url(../images/disc_color.jpg) no-repeat -100px -975px!important}
+.bg1566 { background:url(../images/disc_color.jpg) no-repeat -125px -975px!important}
+.bg1567 { background:url(../images/disc_color.jpg) no-repeat -150px -975px!important}
+.bg1568 { background:url(../images/disc_color.jpg) no-repeat -175px -975px!important}
+.bg1569 { background:url(../images/disc_color.jpg) no-repeat -200px -975px!important}
+.bg1570 { background:url(../images/disc_color.jpg) no-repeat -225px -975px!important}
+.bg1571 { background:url(../images/disc_color.jpg) no-repeat -250px -975px!important}
+.bg1572 { background:url(../images/disc_color.jpg) no-repeat -275px -975px!important}
+.bg1573 { background:url(../images/disc_color.jpg) no-repeat -300px -975px!important}
+.bg1574 { background:url(../images/disc_color.jpg) no-repeat -325px -975px!important}
+.bg1575 { background:url(../images/disc_color.jpg) no-repeat -350px -975px!important}
+.bg1576 { background:url(../images/disc_color.jpg) no-repeat -375px -975px!important}
+.bg1577 { background:url(../images/disc_color.jpg) no-repeat -400px -975px!important}
+.bg1578 { background:url(../images/disc_color.jpg) no-repeat -425px -975px!important}
+.bg1579 { background:url(../images/disc_color.jpg) no-repeat -450px -975px!important}
+.bg1580 { background:url(../images/disc_color.jpg) no-repeat -475px -975px!important}
+.bg1581 { background:url(../images/disc_color.jpg) no-repeat -500px -975px!important}
+.bg1582 { background:url(../images/disc_color.jpg) no-repeat -525px -975px!important}
+.bg1583 { background:url(../images/disc_color.jpg) no-repeat -550px -975px!important}
+.bg1584 { background:url(../images/disc_color.jpg) no-repeat -575px -975px!important}
+.bg1585 { background:url(../images/disc_color.jpg) no-repeat -600px -975px!important}
+.bg1586 { background:url(../images/disc_color.jpg) no-repeat -625px -975px!important}
+.bg1587 { background:url(../images/disc_color.jpg) no-repeat -650px -975px!important}
+.bg1588 { background:url(../images/disc_color.jpg) no-repeat -675px -975px!important}
+.bg1589 { background:url(../images/disc_color.jpg) no-repeat -700px -975px!important}
+.bg1590 { background:url(../images/disc_color.jpg) no-repeat -725px -975px!important}
+.bg1591 { background:url(../images/disc_color.jpg) no-repeat -750px -975px!important}
+.bg1592 { background:url(../images/disc_color.jpg) no-repeat -775px -975px!important}
+.bg1593 { background:url(../images/disc_color.jpg) no-repeat -800px -975px!important}
+.bg1594 { background:url(../images/disc_color.jpg) no-repeat -825px -975px!important}
+.bg1595 { background:url(../images/disc_color.jpg) no-repeat -850px -975px!important}
+.bg1596 { background:url(../images/disc_color.jpg) no-repeat -875px -975px!important}
+.bg1597 { background:url(../images/disc_color.jpg) no-repeat -900px -975px!important}
+.bg1598 { background:url(../images/disc_color.jpg) no-repeat -925px -975px!important}
+.bg1599 { background:url(../images/disc_color.jpg) no-repeat -950px -975px!important}
+.bg1600 { background:url(../images/disc_color.jpg) no-repeat -975px -975px!important}

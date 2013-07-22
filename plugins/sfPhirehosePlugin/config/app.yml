@@ -1,0 +1,9 @@
+all:
+  phirehose:
+    class:        sfPhirehose
+    username:     songecko # Username of your Twitter account
+    password:     nevermind # Password of your Twitter account
+    follow:       ~ # Array of numeric Twitter User IDs to follow
+    track:        
+      - "#EstrenoStarsDanceAR"  # Array of phrases to track (will get merged with any from TwitterSearchTerms)
+    log_purge:    86400 # time to keep log entries for, defaults to 1 day

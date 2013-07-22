@@ -1,0 +1,29 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html; charset=UTF-8
+
+  metas:
+    title:         "The Rolling Stones - Fifty Years"
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:
+    - http://fonts.googleapis.com/css?family=Lato
+    - countdown.css
+    - /js/colorbox/example5/colorbox.css  
+    - jquery.countdown.css
+
+  javascripts:    
+    - https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+    - unitpngfix/unitpngfix.js
+    - countdown/jquery.countdown.js
+    - script.js
+    - colorbox/colorbox/jquery.colorbox-min.js
+
+  has_layout:     true
+  layout:         layout

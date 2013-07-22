@@ -1,0 +1,50 @@
+sfGuardUserProfile:
+  tableName:          sf_guard_user_profile
+  columns:
+    user_id:          { type: integer, notnull: true }
+    twitter_username: { type: string(20) }
+    first_name:       { type: string(50) }    
+    last_name:        { type: string(50) }  
+    email_address:    { type: string(100) }
+    profile_image:    { type: string(250) }  
+    dni:              { type: string(8) }  
+    phone_number:     { type: string(12) }  
+    birth_date:       { type: timestamp }
+    points:           { type: integer, notnull: true, default: 0 }  
+  indexes:
+    twitter_username_index: { fields: [twitter_username], unique: true }
+  relations:
+    user:             { type: one, foreignType: one, class: sfGuardUser, local: user_id, foreign: id, onDelete: cascade, foreignAlias: Profile }
+
+Tweet:
+  actAs:
+    Timestampable:    ~
+  columns:
+    twitter_guid:     { type: string(22), notnull: true }  # as id of the tweet from twitter
+    twitter_user_id:  { type: integer(5), notnull: true }  # as twitter user id
+    user_id:          { type: integer, notnull: true }
+    text:             { type: string(140), notnull: true }
+  indexes:
+    twitter_guid_index: { fields: [twitter_guid], type: unique }
+  relations:
+    user:             { class: sfGuardUser, local: user_id, foreign: id, onDelete: cascade, foreignAlias: Tweets }
+    
+UserPromoCode:
+  actAs:
+    Timestampable:    ~
+  columns:
+    user_id:          { type: integer, notnull: true }
+    promo_code_id:    { type: integer, notnull: true }
+  indexes:
+    double_key_index:
+      fields:         [user_id, promo_code_id]
+      type :          unique
+  relations:
+    user:             { class: sfGuardUser, local: user_id, foreign: id, onDelete: cascade, foreignAlias: UserPromoCodes }
+    promoCode:        { class: PromoCode, local: promo_code_id, foreign: id, onDelete: cascade, foreignAlias: UserPromoCodes }
+ 
+PromoCode:
+  actAs:
+    Timestampable:    ~
+  columns:
+    code:             { type: string(100), notnull: true }

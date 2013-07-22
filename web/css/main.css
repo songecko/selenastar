@@ -1,0 +1,31 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,center{margin:0;padding:0;border:0;outline:0;font-weight:normal;font-style:normal;font-size:100%;font-family:inherit}body{line-height:1}:focus{outline:0}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:""""}input,textarea{margin:0;padding:0}hr{margin:0;padding:0;border:0;color:#000;background-color:#000;height:1px}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}.clearfix {display:inline-block;}* html .clearfix {height:1%;}.clearfix {display:block;}
+
+body { background:#000 url(../images/bg.jpg) no-repeat top center; cursor:default; font-family:Verdana, Geneva, sans-serif;}
+
+
+.wrap { width:960px; margin:0px auto; }
+
+.twitter-follow-button { margin:170px 0 0 90px;}
+
+.delay1{-webkit-animation-delay:0.5s;-moz-animation-delay:0.5s;-ms-animation-delay:0.5s;-o-animation-delay:0.5s;}
+.delay2{-webkit-animation-delay:1s;-moz-animation-delay:1s;-ms-animation-delay:1s;-o-animation-delay:1s;}
+.delay3{-webkit-animation-delay:1.5s;-moz-animation-delay:1.5s;-ms-animation-delay:1.5s;-o-animation-delay:1.5s;}
+.delay4{-webkit-animation-delay:2s;-moz-animation-delay:2s;-ms-animation-delay:2s;-o-animation-delay:2s;}
+.delay5{-webkit-animation-delay:2.5s;-moz-animation-delay:2.5s;-ms-animation-delay:2.5s;-o-animation-delay:2.5s;}
+.delay6{-webkit-animation-delay:3s;-moz-animation-delay:3s;-ms-animation-delay:3s;-o-animation-delay:3s;}
+
+
+.header { background:url(../images/logo.png) no-repeat; width:674px; height:352px; margin:0px auto;}
+
+.puntos { display:block; clear:both; height:350px;}
+.punto1 { background:url(../images/circulo1.png) no-repeat; display:block; width:268px; height:333px; position:absolute; float:left; z-index:1; margin:30px 0 0 95px;}
+.punto2 { background:url(../images/circulo2.png) no-repeat; display:block; width:308px; height:387px; position:absolute; float:left; z-index:2; margin:0px 0 0 325px;}
+.punto3 { background:url(../images/circulo3.png) no-repeat; display:block; width:268px; height:333px; position:absolute; float:left; z-index:1; margin:30px 0 0 595px;}
+
+.texto { background:url(../images/texto.png) no-repeat top center; height:103px; width:100%; display:block; clear:both;}
+
+a.btn_participar { background: url(../images/participar.png) no-repeat; display:block; width:289px; height:125px; text-indent:-9999px; margin:0px auto;}
+a.btn_participar:hover { background:url(../images/participar_a.png)}
+
+.aclaracion { font-size:12px; text-align:center; color:#535053; padding:30px 0 80px 0;}
