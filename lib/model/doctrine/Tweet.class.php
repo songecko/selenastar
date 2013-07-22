@@ -14,17 +14,19 @@ class Tweet extends BaseTweet
 {
 	static public function hydrateFromDecodedResponse($t)
 	{
-		$screenName = $t->user->screen_name?$t->user->screen_name:false;
-		$user = sfGuardUserTable::getInstance()->retrieveGuardUserByTwitterUsername($screenName);
-		if($user)
+		$screenName = $t['user']['screen_name']?$t['user']['screen_name']:false;
+		if($screenName)
 		{
-			$tweet = new Tweet();
-			$tweet['twitter_guid']    = $t->id_str                   ? $t->id_str : false;
-			$tweet['twitter_user_id'] = $t->user->id                 ? $t->user->id : false;
-			$tweet['user_id']         = $user->getId();
-			$tweet['text']            = $t->text                     ? $t->text : false;
-						
-			return $tweet;
+			$user = sfGuardUserTable::getInstance()->retrieveOrCreateGuardUserByTwitterUsername($screenName, $t['user']['profile_image_url']);
+			if($user && count($user->Tweets) == 0)
+			{
+				$tweet = new Tweet();
+				$tweet['twitter_guid']    = $t['id_str']?$t['id_str']:false;
+				$tweet['user_id']         = $user->getId();
+				$tweet['text']            = $t['text']?$t['text']:false;
+							
+				return $tweet;
+			}
 		}
 		
 		return null;
@@ -32,9 +34,12 @@ class Tweet extends BaseTweet
 	
 	public function postSave($event)
 	{
-		//Add points
+		//Active the user when save the tweet
 		$user = $this->getUser();
-		$user->Profile->setPoints($user->Profile->getPoints() + sfConfig::get('app_points_for_tweet'));
-		$user->save();
+		if($user->getIsActive() == false)
+		{
+			$user->setIsActive(true);
+			$user->save();
+		}
 	}
 }

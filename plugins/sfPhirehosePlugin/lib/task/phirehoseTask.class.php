@@ -99,8 +99,8 @@ EOF;
     $this->logSection("Phirehose",sprintf("Connecting as %s using class %s",sfConfig::get('app_phirehose_username'),$class_name));
 
     $searcher = new $class_name(
-      sfConfig::get('app_phirehose_username'),
-      sfConfig::get('app_phirehose_password'),
+      sfConfig::get('app_twitter_oauth_token'),
+      sfConfig::get('app_twitter_oauth_token_secret'),
       Phirehose::METHOD_FILTER
     );
     

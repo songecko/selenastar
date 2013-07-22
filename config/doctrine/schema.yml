@@ -21,7 +21,6 @@ Tweet:
     Timestampable:    ~
   columns:
     twitter_guid:     { type: string(22), notnull: true }  # as id of the tweet from twitter
-    twitter_user_id:  { type: integer(5), notnull: true }  # as twitter user id
     user_id:          { type: integer, notnull: true }
     text:             { type: string(140), notnull: true }
   indexes:

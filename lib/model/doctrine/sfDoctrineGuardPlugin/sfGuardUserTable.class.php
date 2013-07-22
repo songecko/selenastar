@@ -24,12 +24,11 @@ class sfGuardUserTable extends PluginsfGuardUserTable
      * @param boolean $isActive
      * @return sfGuardUser
      */
-    public function retrieveGuardUserByTwitterUsername($twitterUsername, $isActive = true)
+    public function retrieveGuardUserByTwitterUsername($twitterUsername)
     {
     	$q = $this->createQuery('u')
-    	->innerJoin('u.Profile p')
-    	->where('p.twitter_username = ?', $twitterUsername)
-    	->andWhere('u.is_active = ?', $isActive);
+    	->leftJoin('u.Tweets t')
+    	->where('u.username = ?', $twitterUsername);
     
     	if ($q->count())
     	{
@@ -37,6 +36,23 @@ class sfGuardUserTable extends PluginsfGuardUserTable
     	}
     
     	return null;
+    }
+    
+    public function retrieveOrCreateGuardUserByTwitterUsername($twitterUsername, $profileImage = false)
+    {
+    	$user = $this->retrieveGuardUserByTwitterUsername($twitterUsername);
+    	if(!$user)
+    	{
+    		$user = new sfGuardUser();
+    		$user->setUsername($twitterUsername);
+    		$user->setIsActive(false);
+    		$user->Profile->setTwitterUsername($twitterUsername);
+    		if($profileImage)
+    			$user->Profile->setProfileImage($profileImage);
+    		$user->save();
+    	}
+    	
+    	return $user;
     }
     
     /**
@@ -229,10 +245,12 @@ class sfGuardUserTable extends PluginsfGuardUserTable
     
     public function getUsersWithTwitterQuery($limit = false)
     {
-    	$q = $this->createQuery('u');
-    	$q->andWhere('u.is_super_admin = ?', false);
-    	$q->leftJoin('u.Profile p');
-    	$q->andWhere('p.twitter_username IS NOT NULL');
+    	$q = $this->createQuery('u')
+    		->leftJoin('u.Profile p')
+    		//->leftJoin('u.Tweets t')
+    		->where('u.is_super_admin = ?', false)
+    		->andWhere('u.is_active = ?', true)
+    		->andWhere('u.username IS NOT NULL');
     	
     	if($limit)
     	{

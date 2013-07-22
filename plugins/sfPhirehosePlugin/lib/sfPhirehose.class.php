@@ -1,5 +1,5 @@
 <?php
-class sfPhirehose extends Phirehose
+class sfPhirehose extends OauthPhirehose
 {
   public $task;
   
@@ -18,7 +18,11 @@ class sfPhirehose extends Phirehose
   public function __construct($username, $password, $method = Phirehose::METHOD_SAMPLE, $format = self::FORMAT_JSON)
   {
     $this->phrases = sfConfig::get('app_phirehose_track', array());
-    return parent::__construct($username, $password, $method, $format);
+    $return = parent::__construct($username, $password, $method, $format);
+    $this->consumerKey = sfConfig::get('app_twitter_consumer_key');
+    $this->consumerSecret = sfConfig::get('app_twitter_consumer_secret');
+    
+    return $return;
   }
 
   /**
@@ -88,57 +92,25 @@ class sfPhirehose extends Phirehose
   {
     try
     {
-      $data = json_decode($raw);
+		$data = json_decode($raw, true);
       
-      // Delete tweets as requested by twitter
-      if(isset($data->delete) && isset($data->delete->status))
-      {
-        Doctrine::getTable('Tweet')
-          ->createQuery('t')
-          ->delete()
-          ->where('guid = ?',$data->delete->status->id_str)
-          ->execute();
-        $this->log("Deleted tweet with id %s",$data->delete->status->id_str);
-      }
-
-      // If we're consuming too much too quickly, Twitter will tell us
-      elseif(isset($data->limit))
-      {
-        $this->log(sprintf("%u status(es) have been rate-limited"),
-          $data->limit
-        );
-      }
-
-      // Get rid of any geo data as requested by Twitter
-      elseif(isset($data->scrub_geo))
-      {
-        Doctrine::getTable('Tweet')
-          ->createQuery('t')
-          ->update()
-          ->set('t.latitude','NULL')
-          ->set('t.longitude','NULL')
-          ->where('t.twitter_user_id = ?',$data->scrub_geo->user_id)
-          ->andWhere('t.latitude IS NOT NULL')
-          ->execute();
-        $this->log("Scrubbed geodata for user %s",$data->scrub_geo->user_id);
-      }
-      else
-      {
-        // Create a new Tweet object from the JSON data
+		$this->log("Saving tweet '".$data['text']."'");
+		
+		// Create a new Tweet object from the JSON data
         $tweet = Tweet::hydrateFromDecodedResponse($data);
         if($tweet)
         {
-        	try {        	
-		      	$this->log("Saving tweet '".$data->text."' by the user ".$data->user->id);
+			try {		        
 		        $tweet->save();
 		        $tweet->free(); // this helps minimise memory leakage.
-        			
+		        $this->log("Tweet saved!");        			
         	}catch (Doctrine_Exception $e)
         	{
         		$this->log("-- ERROR: ".$e->getMessage()." --");
         	}
+        }else{
+        	$this->log("-- ERROR: Tween not saved!");
         }
-      }
     }
     catch(Exception $e)
     {

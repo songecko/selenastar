@@ -41,6 +41,7 @@ class homeActions extends sfActions
 				return 'SuccessMobile';
 			}
 		}*/
+		$this->users = sfGuardUserTable::getInstance()->getUsersWithTwitter();
 	}
 	
 	public function executeParticipate(sfWebRequest $request)

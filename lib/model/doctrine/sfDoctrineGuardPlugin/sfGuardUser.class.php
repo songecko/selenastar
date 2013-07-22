@@ -40,7 +40,7 @@ class sfGuardUser extends PluginsfGuardUser
 	 */
 	public function getSocialName()
 	{
-		return ($this->Profile->getTwitterUsername())?'@'.$this->Profile->getTwitterUsername():$this->Profile->getFirstName();
+		return ($this->getUsername())?'@'.$this->getUsername():$this->Profile->getFirstName();
 	}
 	
 	/**
@@ -48,13 +48,15 @@ class sfGuardUser extends PluginsfGuardUser
 	 */
 	public function getSocialPicture()
 	{
-		if($this->Profile->getProfileImage())
+		if($this->Profile && $this->Profile->getProfileImage())
 		{
 			return $this->Profile->getProfileImage();
-		}else
+		}/*else
 		{
-			return ($this->Profile->getTwitterUsername())?"http://api.twitter.com/1/users/profile_image/".$this->Profile->getTwitterUsername().".json?size=bigger":image_path('user_default.jpg');
-		}
+			return ($this->getUsername())?"http://api.twitter.com/1/users/profile_image/".$this->getUsername().".json?size=bigger":image_path('user_default.jpg');
+		}*/
+		
+		return '';
 	}
 		
 	public function getRankingPosition()

@@ -24,15 +24,15 @@ ul li.avatar:hover a span .user p { font-size:11px; color:#999; padding-top:10px
 
 /*    FILA 1   */
 
-.bg01 { background:url(../images/disc_color.jpg) no-repeat !important}
-.bg02 { background:url(../images/disc_color.jpg) no-repeat -25px 0 !important}
-.bg03 { background:url(../images/disc_color.jpg) no-repeat -50px 0!important}
-.bg04 { background:url(../images/disc_color.jpg) no-repeat -75px 0!important}
-.bg05 { background:url(../images/disc_color.jpg) no-repeat -100px 0!important}
-.bg06 { background:url(../images/disc_color.jpg) no-repeat -125px 0!important}
-.bg07 { background:url(../images/disc_color.jpg) no-repeat -150px 0!important}
-.bg08 { background:url(../images/disc_color.jpg) no-repeat -175px 0!important}
-.bg09 { background:url(../images/disc_color.jpg) no-repeat -200px 0!important}
+.bg1 { background:url(../images/disc_color.jpg) no-repeat !important}
+.bg2 { background:url(../images/disc_color.jpg) no-repeat -25px 0 !important}
+.bg3 { background:url(../images/disc_color.jpg) no-repeat -50px 0!important}
+.bg4 { background:url(../images/disc_color.jpg) no-repeat -75px 0!important}
+.bg5 { background:url(../images/disc_color.jpg) no-repeat -100px 0!important}
+.bg6 { background:url(../images/disc_color.jpg) no-repeat -125px 0!important}
+.bg7 { background:url(../images/disc_color.jpg) no-repeat -150px 0!important}
+.bg8 { background:url(../images/disc_color.jpg) no-repeat -175px 0!important}
+.bg9 { background:url(../images/disc_color.jpg) no-repeat -200px 0!important}
 .bg10 { background:url(../images/disc_color.jpg) no-repeat -225px 0!important}
 .bg11 { background:url(../images/disc_color.jpg) no-repeat -250px 0!important}
 .bg12 { background:url(../images/disc_color.jpg) no-repeat -275px 0!important}

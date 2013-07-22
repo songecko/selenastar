@@ -14,7 +14,7 @@ abstract class Phirehose
   /**
    * Class constants
    */
-  const URL_BASE         = 'https://stream.twitter.com/1/statuses/';
+  const URL_BASE         = 'https://stream.twitter.com/1.1/statuses/';
   const FORMAT_JSON      = 'json';
   const FORMAT_XML       = 'xml';
   const METHOD_FILTER    = 'filter';
@@ -160,12 +160,13 @@ abstract class Phirehose
    * @param string $method
    * @param string $format
    */
-  public function __construct($username, $password, $method = Phirehose::METHOD_SAMPLE, $format = self::FORMAT_JSON)
+  public function __construct($username, $password, $method = Phirehose::METHOD_SAMPLE, $format = self::FORMAT_JSON, $lang = FALSE)
   {
     $this->username = $username;
     $this->password = $password;
     $this->method = $method;
     $this->format = $format;
+    $this->lang = $lang;
   }
   
   /**
@@ -344,6 +345,26 @@ abstract class Phirehose
   {
     $this->count = $count;
   }
+
+  /**
+   * Restricts tweets to the given language, given by an ISO 639-1 code (http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+   *
+   * @param string $lang
+   */
+  public function setLang($lang)
+  {
+    $this->lang = $lang;
+  }
+
+  /**
+   * Returns the ISO 639-1 code formatted language string of the current setting. (http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+   *
+   * @param string $lang
+   */
+  public function getLang()
+  {
+    return $this->lang;
+  }
   
   /**
    * Connects to the stream API and consumes the stream. Each status update in the stream will cause a call to the
@@ -399,7 +420,11 @@ abstract class Phirehose
         if ($statusLength > 0) {
           // Read status bytes and enqueue
           $bytesLeft = $statusLength - strlen($this->buff);
-          while ($bytesLeft > 0 && $this->conn !== NULL && !feof($this->conn) && ($numChanged = stream_select($this->fdrPool, $fdw, $fde, 0, 20000)) !== FALSE) {
+          while ( $bytesLeft > 0 
+                  && $this->conn !== NULL 
+                  && !feof($this->conn) 
+                  && ($numChanged = stream_select($this->fdrPool, $fdw, $fde, 0, 20000)) !== FALSE 
+                  && (time() - $lastStreamActivity) <= $this->idleReconnectTimeout) {  
             $this->fdrPool = array($this->conn); // Reassign
             $this->buff .= fread($this->conn, $bytesLeft); // Read until all bytes are read into buffer
             $bytesLeft = ($statusLength - strlen($this->buff));
@@ -443,11 +468,15 @@ abstract class Phirehose
         
       } // End while-stream-activity
 
+      if (function_exists('pcntl_signal_dispatch')) {
+        pcntl_signal_dispatch();
+      }
+
       // Some sort of socket error has occured
       $this->lastErrorNo = is_resource($this->conn) ? @socket_last_error($this->conn) : NULL;
       $this->lastErrorMsg = ($this->lastErrorNo > 0) ? @socket_strerror($this->lastErrorNo) : 'Socket disconnected';
       $this->log('Phirehose connection error occured: ' . $this->lastErrorMsg,'error');
-      
+
       // Reconnect
     } while ($this->reconnect);
 
@@ -522,6 +551,11 @@ abstract class Phirehose
       
       // Setup params appropriately
       $requestParams = array('delimited' => 'length');
+
+      // Setup the language of the stream
+      if($this->lang) {
+        $requestParams['language'] = $this->lang;
+      }
       
       // Filter takes additional parameters
       if ($this->method == self::METHOD_FILTER && count($this->trackWords) > 0) {
