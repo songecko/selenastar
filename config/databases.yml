@@ -2,6 +2,14 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
+      dsn:      mysql:host=localhost;dbname=selnet_UM
+      username: Selnena_UM
+      password: C4r4mbol4
+
+dev:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
       dsn:      mysql:host=localhost;dbname=selenastar
       username: root
       password: 123456

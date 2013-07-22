@@ -6,24 +6,17 @@ default:
     content-type: text/html; charset=UTF-8
 
   metas:
-    title:         "The Rolling Stones - Fifty Years"
+    title:         "Selena Gomez - Stars Dance"
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en
     #robots:       index, follow
 
   stylesheets:
-    - http://fonts.googleapis.com/css?family=Lato
-    - countdown.css
-    - /js/colorbox/example5/colorbox.css  
-    - jquery.countdown.css
+    - animate.min.css
+    - comingsoon.css
 
-  javascripts:    
-    - https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
-    - unitpngfix/unitpngfix.js
-    - countdown/jquery.countdown.js
-    - script.js
-    - colorbox/colorbox/jquery.colorbox-min.js
+  javascripts:    ~
 
   has_layout:     true
   layout:         layout
