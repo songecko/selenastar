@@ -25,7 +25,29 @@ body { background:#000 url(../images/bg.jpg) no-repeat top center; cursor:defaul
 
 .texto { background:url(../images/texto.png) no-repeat top center; height:103px; width:100%; display:block; clear:both;}
 
-a.btn_participar { background: url(../images/participar.png) no-repeat; display:block; width:289px; height:125px; text-indent:-9999px; margin:0px auto;}
-a.btn_participar:hover { background:url(../images/participar_a.png)}
 
 .aclaracion { font-size:12px; text-align:center; color:#535053; padding:30px 0 80px 0;}
+
+.botones { width: 500px; margin: 0px auto;padding: 80px 0;}
+
+a.btn_tweet { background: url(../images/btn_tweet.png) no-repeat top; width: 233px; height:65px; display: block; text-indent: -9999px; position: relative;float: left;}
+a.btn_tweet:hover { background-position: bottom;}
+
+a.btn_disco { background: url(../images/btn_disco.png) no-repeat top; width: 233px; height:65px; display: block; text-indent: -9999px;position: relative;float: right;}
+a.btn_disco:hover { background-position: bottom;}
+
+.overlay { position:absolute; float:left; z-index:100; width:100%; height:100%; display:block; background:url(../images/overlay.png); }
+.cont_pop {width:480px; background:#fff; border-radius: 3px; box-shadow: 0 3px 10px #000; padding: 20px; font-family:Arial, Helvetica, sans-serif;}
+a.btn_close { background:url(../images/close.png) no-repeat; width:59px; height:62px; display:block; position:absolute; float:left; text-indent:-9999px; margin: -40px 0 0 475px;}
+
+.cont_pop span { display:block; font-weight:bold; font-size:15px; padding-bottom:5px; color:#5a1840}
+.cont_pop label { display:block; margin-bottom:20px;}
+.cont_pop textarea { width:95%; height:70px; font-family:Arial, Helvetica, sans-serif; padding:10px;}
+
+.btn_enviar { background:url(../images/btn_enviar.png) no-repeat top; border:none; width:155px; height:51px; display:block; text-indent:-9999px; position: absolute; float:left; margin:-50px 0 0 330px;}
+.btn_enviar:hover { background-position:bottom;}
+
+.restante { font-size:11px; color:#999; padding-top:5px;}
+.restante strong { font-weight:bold; color:#666;}
+.restante.warning strong { color:#C07A44; }
+.restante.exceeded strong { color:#D30505; }

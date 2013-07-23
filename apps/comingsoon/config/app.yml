@@ -10,8 +10,8 @@ all:
     routes_register:    true
     
   twitter:
-    api_key:            'xC67xBHbnY6FtcS6XbQrA'
-    consumer_key:       'xC67xBHbnY6FtcS6XbQrA'
-    consumer_secret:    'jA8rSKEONBpLlFKGPRYx7pXU2J1px8dActWTYxTwGnU'
-    oauth_token:        '16963100-ETzHs0C55NjHJC9QIOEcd5C07zOZIuq54HEQuGZRi'
-    oauth_token_secret: 'Qn2Zyt9bDjG6iq5r1tLAYnS3j8Nh8yQlzakLK00IDM'
+    api_key:            'qulADWMJFKtzGq2XcKSxg'
+    consumer_key:       'qulADWMJFKtzGq2XcKSxg'
+    consumer_secret:    'zLO4hfgbCtg2630ZcuCJhzx3RB3v1EqhdXlYmEThtk'
+    oauth_token:        '16963100-JZfnOlQPVNvhrfF2znPfFyBN2IizQ7z1Cl8p4ouCM'
+    oauth_token_secret: 'oRLVQiB61HAEdihXKnJm612zTgUvhwfYwlfbvIo'

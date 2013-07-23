@@ -5,6 +5,8 @@
     	<?php include_metas() ?>
     	<?php include_title() ?>
     	
+    	<link rel="shortcut icon" type="image/x-icon" href="<?php echo public_path('favicon.ico') ?>">
+    	
     	<?php include_stylesheets() ?>
 	</head>
 	<body>

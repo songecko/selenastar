@@ -25,4 +25,9 @@ class homeComponents extends sfComponents
 				break;
 		}
 	}
+	
+	public function executeAlbum(sfWebRequest $request)
+	{
+		$this->users = sfGuardUserTable::getInstance()->getUsersWithTwitter();
+	}
 }

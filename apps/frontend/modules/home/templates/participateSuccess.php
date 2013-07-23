@@ -11,6 +11,39 @@
 	</div>
 	<div class="texto animated fadeInDown delay5">
 	</div>
-	<a class="btn_participar" href="https://twitter.com/intent/tweet?source=webclient&text=&hashtags=EstrenoStarsDanceAR">Participar</a>
+	<div class="botones">
+		<?php if($sf_user->isAuthenticated()): ?>
+		<a class="btn_tweet" href="#doTweetModal" data-toggle="modal">Participar</a>
+		<?php else: ?>
+		<a class="btn_tweet" href="<?php echo url_for('twitter_signin') ?>">Participar</a>
+		<?php endif; ?>
+		<a class="btn_disco" href="<?php echo url_for('album') ?>">Participar</a>
+	</div>
 	<div class="aclaracion">Concurso válido sólo en Argentina</div>
 </div>
+<div id="doTweetModal" class="modal cont_pop hide fade" tabindex="-1" role="dialog" aria-labelledby="doTweetModalLabel" aria-hidden="true">
+	<a class="btn_close" href="#1" data-dismiss="modal" aria-hidden="true">cerrar</a>
+	<form action="<?php echo url_for('participate') ?>" method="post" enctype="multipart/form-data">
+		<label>
+			<span>Tu mensaje</span>
+			<?php echo $doTweetForm['_csrf_token']->render() ?>
+			<?php echo $doTweetForm['text']->render() ?><br />						
+		</label>
+		<label>
+			<span>Sube tu foto</span>
+			<?php echo $doTweetForm['picture']->render() ?>
+		</label>
+		<button type="submit" class="btn_enviar">Enviar</button>
+	</form>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#doTweetModal textarea").charCount({
+		allowed: 115,
+		counterElement: 'div',
+		css: 'restante',
+		counterText: 'Te quedan <strong>',
+		counterTextEnd: '</strong> caracteres.'
+	});	
+});
+</script>

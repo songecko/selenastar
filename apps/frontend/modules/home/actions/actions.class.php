@@ -40,13 +40,72 @@ class homeActions extends sfActions
 			}else{
 				return 'SuccessMobile';
 			}
-		}*/
-		$this->users = sfGuardUserTable::getInstance()->getUsersWithTwitter();
+		}*/		
 	}
 	
 	public function executeParticipate(sfWebRequest $request)
-	{
+	{		
+		$this->doTweetForm = new DoTweetForm();
 		
+		if($request->isMethod('post'))
+		{
+			$user = $this->getUser()->getGuardUser();
+			/*if($user->isFollowingUser('47664469'))
+			{*/
+				$this->doTweetForm->bind($request->getParameter($this->doTweetForm->getName()), $request->getFiles($this->doTweetForm->getName()));
+				if ($this->doTweetForm->isValid()) 
+				{
+					$values = $this->doTweetForm->getValues();
+
+					$file = $values['picture'];
+					$filename = 'picture_'.sha1($file->getOriginalName()).$file->getExtension($file->getOriginalExtension());
+					$fileSrc = sfConfig::get('sf_upload_dir').'/'.$filename;
+					$file->save($fileSrc);
+					
+					$twResponse = $user->publishPostWithMedia($values['text'], $fileSrc);
+					if($twResponse)
+					{
+						$this->redirect('album');
+					}
+				}
+			//}
+		}
+	}
+	
+	public function executeOembedTweet(sfWebRequest $request)
+	{
+		$this->setLayout(false);
+		
+		$tweetId = $request->getParameter('twitter_guid');
+		
+		if($tweetId)
+		{
+			$connection = new TwitterOAuth(
+					sfConfig::get('app_twitter_consumer_key'),
+					sfConfig::get('app_twitter_consumer_secret'),
+					sfConfig::get('app_twitter_oauth_token'),
+					sfConfig::get('app_twitter_oauth_token_secret')
+			);
+			
+			$oembed =  $connection->get('statuses/oembed', array('id' => $tweetId));
+			
+			if(isset($oembed->html))
+			{
+				return $this->renderText($oembed->html);
+			}else {
+				$tweet = TweetTable::getInstance()->findOneByTwitterGuid($tweetId);
+				if ($tweet) 
+				{
+					return $this->renderText($tweet->getText());
+				}
+			}
+		}
+	}
+	
+	public function executeGetAlbum(sfWebRequest $request)
+	{
+		$this->setLayout(false);
+		return $this->renderComponent('home', 'album');	
 	}
 	
 	public function executeFullVersion(sfWebRequest $request)

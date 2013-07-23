@@ -21,10 +21,22 @@ participate:
   url:    /participar
   param:  { module: home, action: participate }
     
+album:
+  url:    /disco
+  param:  { module: home, action: index }
+  
+oembed_tweet:
+  url:    /tweet/oembed/:twitter_guid
+  param:  { module: home, action: oembedTweet }
+  
+get_album:
+  url:    /get_album
+  param:  { module: home, action: getAlbum }
+  
 # default rules
 homepage:
   url:    /
-  param:  { module: home, action: index }
+  param:  { module: home, action: participate }
 
 # generic rules
 # please, remove them by adding more specific rules

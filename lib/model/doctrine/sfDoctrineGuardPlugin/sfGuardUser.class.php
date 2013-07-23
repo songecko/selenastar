@@ -35,6 +35,30 @@ class sfGuardUser extends PluginsfGuardUser
 		}
 	}
 	
+	public function publishPostWithMedia($text, $media)
+	{
+		$user = sfContext::getInstance()->getUser();
+	
+		$access_token = $user->getAttribute('access_token');
+	
+		if (empty($access_token) || empty($access_token['oauth_token']) || empty($access_token['oauth_token_secret']))
+		{
+			return;
+		}
+	
+		/* Create a TwitterOauth object with consumer/user tokens. */
+		$connection = new TwitterOAuth(sfConfig::get('app_twitter_consumer_key'), sfConfig::get('app_twitter_consumer_secret'), $access_token['oauth_token'], $access_token['oauth_token_secret']);
+	
+		/* If method is set change API call made. Test is called by default. */
+		$credentials = $connection->get('account/verify_credentials');
+	
+		if($credentials)
+		{
+			$params = array('media[]' => '@'.$media, 'status' => $text);
+			return $connection->upload('statuses/update_with_media', $params);
+		}
+	}
+	
 	/**
 	 * @return String
 	 */
@@ -62,5 +86,39 @@ class sfGuardUser extends PluginsfGuardUser
 	public function getRankingPosition()
 	{
 		return sfGuardUserProfileTable::getInstance()->getUserRankingPosition($this->getId());
+	}
+	
+	public function isFollowingUser($twitterUserId)
+	{
+		$connection = new TwitterOAuth(
+				sfConfig::get('app_twitter_consumer_key'),
+				sfConfig::get('app_twitter_consumer_secret'),
+				sfConfig::get('app_twitter_oauth_token'),
+				sfConfig::get('app_twitter_oauth_token_secret'
+		));
+		
+		$followers =  $connection->get('friends/ids', array('screen_name' => $this->getUsername()));
+
+		if(isset($followers->ids))
+		{
+			$followersIds = $followers->ids;
+			foreach($followersIds as $followerId)
+			{
+				if($followerId == $twitterUserId)
+					return true;
+			}
+		}
+					
+		return false;
+	}
+	
+	public function getTweetId()
+	{
+		foreach ($this->Tweets as $tweet)
+		{
+			return $tweet->getTwitterGuid();
+		}
+		
+		return null;
 	}
 }

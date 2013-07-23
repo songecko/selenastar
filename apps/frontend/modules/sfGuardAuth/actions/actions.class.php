@@ -71,15 +71,9 @@ class sfGuardAuthActions extends BasesfGuardAuthActions
 				$credentials = $connection->get('account/verify_credentials');
 				$twitterUsername = $credentials->screen_name;
 				
-				$sfGuardUser =  sfGuardUserTable::getInstance()->getOrCreateGuardUserByTwitterUsername($twitterUsername, true);					
+				$sfGuardUser =  sfGuardUserTable::getInstance()->retrieveOrCreateGuardUserByTwitterUsername($twitterUsername, $credentials->profile_image_url);					
 				if ($sfGuardUser)
-				{
-					if(!$sfGuardUser->Profile->getProfileImage())
-					{
-						$sfGuardUser->Profile->setProfileImage(str_replace('_normal.jpg', '_reasonably_small.jpg', $credentials->profile_image_url));
-						$sfGuardUser->save();
-					}
-					
+				{					
 					$this->getUser()->signIn($sfGuardUser);
 				
 					$this->redirect($this->generateUrl('homepage'));

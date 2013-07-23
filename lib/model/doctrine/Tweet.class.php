@@ -14,22 +14,11 @@ class Tweet extends BaseTweet
 {
 	static public function hydrateFromDecodedResponse($t)
 	{
-		$screenName = $t['user']['screen_name']?$t['user']['screen_name']:false;
-		if($screenName)
-		{
-			$user = sfGuardUserTable::getInstance()->retrieveOrCreateGuardUserByTwitterUsername($screenName, $t['user']['profile_image_url']);
-			if($user && count($user->Tweets) == 0)
-			{
-				$tweet = new Tweet();
-				$tweet['twitter_guid']    = $t['id_str']?$t['id_str']:false;
-				$tweet['user_id']         = $user->getId();
-				$tweet['text']            = $t['text']?$t['text']:false;
-							
-				return $tweet;
-			}
-		}
-		
-		return null;
+		$tweet = new Tweet();
+		$tweet['twitter_guid']    = $t['id_str']?$t['id_str']:false;
+		$tweet['text']            = $t['text']?$t['text']:false;					
+				
+		return $tweet;
 	}
 	
 	public function postSave($event)

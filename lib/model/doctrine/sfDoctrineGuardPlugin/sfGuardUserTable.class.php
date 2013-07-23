@@ -54,26 +54,7 @@ class sfGuardUserTable extends PluginsfGuardUserTable
     	
     	return $user;
     }
-    
-    /**
-     * gets or create a sfGuardUser using the twiiter_username column of his Profile class
-     *
-     * @param Integer $twiiterScreenName
-     * @param boolean $isActive
-     * @return sfGuardUser
-     */
-    public function getOrCreateGuardUserByTwitterUsername($twitterUsername, $isActive = true)
-    {
-    	$sfGuardUser = self::retrieveGuardUserByTwitterUsername($twitterUsername, $isActive);
-    
-    	if (!$sfGuardUser instanceof sfGuardUser)
-    	{
-    		$sfGuardUser = self::createGuardUserWithTwitterUsername($twitterUsername);    		
-    	}
-    
-    	return $sfGuardUser;
-    }
-    
+        
     /**
      * Creates an empty sfGuardUser with profile field twitter_username set
      *
@@ -247,7 +228,7 @@ class sfGuardUserTable extends PluginsfGuardUserTable
     {
     	$q = $this->createQuery('u')
     		->leftJoin('u.Profile p')
-    		//->leftJoin('u.Tweets t')
+    		->leftJoin('u.Tweets t')
     		->where('u.is_super_admin = ?', false)
     		->andWhere('u.is_active = ?', true)
     		->andWhere('u.username IS NOT NULL');

@@ -94,23 +94,53 @@ class sfPhirehose extends OauthPhirehose
     {
 		$data = json_decode($raw, true);
       
-		$this->log("Saving tweet '".$data['text']."'");
+		$this->log("-- TWEET: Hashtag Match");
+		
+		if(strpos($data['text'], "http://t.co") === false)
+		{
+			$this->log("-- TWEET: The Tweet does not have image.");
+			return;
+		}
 		
 		// Create a new Tweet object from the JSON data
-        $tweet = Tweet::hydrateFromDecodedResponse($data);
-        if($tweet)
+		$tweet = Tweet::hydrateFromDecodedResponse($data);
+		if(!$tweet)
+		{
+			$this->log("-- TWEET: Problem fetching Tweet.");
+			return;
+		}
+		
+		//Check if we have a screen_name
+		$screenName = $data['user']['screen_name']?$data['user']['screen_name']:false;
+		if(!$screenName)
+		{
+			return;
+		}
+		
+		//Check if the user is already participating
+		$user = sfGuardUserTable::getInstance()->retrieveOrCreateGuardUserByTwitterUsername($screenName, $data['user']['profile_image_url']);
+		if(!$user || $user->getIsActive())
+		{	
+			$this->log("-- TWEET: User ".$screenName." is participating.");
+			return;		
+		}			
+        $tweet->setUserId($user->getId());
+        
+        //Check if the user follow UMArgentina
+        if(!$user->isFollowingUser('47664469'))
         {
-			try {		        
-		        $tweet->save();
-		        $tweet->free(); // this helps minimise memory leakage.
-		        $this->log("Tweet saved!");        			
-        	}catch (Doctrine_Exception $e)
-        	{
-        		$this->log("-- ERROR: ".$e->getMessage()." --");
-        	}
-        }else{
-        	$this->log("-- ERROR: Tween not saved!");
+        	$this->log("-- TWEET: User not following UMArgentina.");
+        	return;
         }
+		
+		try {		        
+			$tweet->save();
+			$tweet->free(); // this helps minimise memory leakage.
+			$this->log("-- TWEET: Saved!");        			
+        }catch (Doctrine_Exception $e)
+		{
+			$this->log("-- TWEET ERROR: ".$e->getMessage());
+		}
     }
     catch(Exception $e)
     {
