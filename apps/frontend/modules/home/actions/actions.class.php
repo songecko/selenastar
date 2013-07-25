@@ -29,7 +29,7 @@ class homeActions extends sfActions
 	 */
 	public function executeIndex(sfWebRequest $request)
 	{	
-		/*$isMobile = (preg_match('#^(?!.*iPad).*(Mobile|Jasmine|Symbian|NetFront|BlackBerry|Opera Mini|Opera Mobi).*$#i', $request->getHttpHeader('User-Agent')) && !$this->getUser()->getAttribute('fullversion', false));
+		$isMobile = (preg_match('#^(?!.*iPad).*(Mobile|Jasmine|Symbian|NetFront|BlackBerry|Opera Mini|Opera Mobi).*$#i', $request->getHttpHeader('User-Agent')) && !$this->getUser()->getAttribute('fullversion', false));
 		if ($isMobile)
 		{
 			$this->setLayout('mobile_layout');
@@ -40,11 +40,17 @@ class homeActions extends sfActions
 			}else{
 				return 'SuccessMobile';
 			}
-		}*/		
+		}		
 	}
 	
 	public function executeParticipate(sfWebRequest $request)
-	{		
+	{	
+		$isMobile = (preg_match('#^(?!.*iPad).*(Mobile|Jasmine|Symbian|NetFront|BlackBerry|Opera Mini|Opera Mobi).*$#i', $request->getHttpHeader('User-Agent')) && !$this->getUser()->getAttribute('fullversion', false));
+		if ($isMobile)
+		{
+			$this->redirect('album');
+		}	
+		
 		$this->doTweetForm = new DoTweetForm();
 		
 		if($request->isMethod('post'))

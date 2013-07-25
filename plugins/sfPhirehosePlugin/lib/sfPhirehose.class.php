@@ -119,7 +119,7 @@ class sfPhirehose extends OauthPhirehose
 		
 		//Check if the user is already participating
 		$user = sfGuardUserTable::getInstance()->retrieveOrCreateGuardUserByTwitterUsername($screenName, $data['user']['profile_image_url']);
-		if(!$user || $user->getIsActive())
+		if(!$user/* || $user->getIsActive()*/)
 		{	
 			$this->log("-- TWEET: User ".$screenName." is participating.");
 			return;		

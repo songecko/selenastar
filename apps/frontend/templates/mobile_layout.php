@@ -1,36 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <?php include_http_metas() ?>
-    <?php include_metas() ?>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-    <?php include_title() ?>
-    
-	<link rel="shortcut icon" href="http://wwwrollingstones.wpengine.netdna-cdn.com/wp-content/themes/rolling-stones-2012/img/fav/favicon.ico?ver=38" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<?php include_http_metas() ?>
+    	<?php include_metas() ?>
+    	<?php include_title() ?>
 
-	<link href="<?php echo _compute_public_path('mobile.css', 'css', 'css') ?>" rel="stylesheet" type="text/css" />
-    
-    <script type="text/javascript">
-    window.addEventListener("load",function() {
-      setTimeout(function(){
-        window.scrollTo(0, 1);
-      }, 0);
-    });
-	</script>	
-  </head>
-  <body>
-    <?php echo $sf_content ?>
-	
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-36234528-1']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
-  </body>
+    	<meta name="viewport" content="width=320;initial-scale=1.0; minimum-scale=1.0;maximum-scale=1.0; user-scalable=1;"/>
+    	
+    	<link rel="shortcut icon" type="image/x-icon" href="<?php echo public_path('favicon.ico') ?>">
+    	
+    	<?php include_stylesheets() ?>
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	</head>
+	<body style="margin:0; background:0;">
+		<div><img src="<?php echo image_path('img_01.jpg')?>" width="100%"/></div>
+		<div><img src="<?php echo image_path('img_02.jpg')?>" width="100%"/></div>
+		<div><img src="<?php echo image_path('img_03.jpg')?>" width="100%"/></div>
+		<div>
+			<a href="https://www.twitter.com/intent/tweet?text=<?php echo urlencode("#EstrenoStarsDanceAr ")?>" style="border:0"><img style="border:0" src="<?php echo image_path('img_04.jpg')?>" width="100%"/></a>
+		</div>
+		<div><img src="<?php echo image_path('img_05.jpg')?>" width="100%"/></div>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-36234528-2', 'starsdanceargentina.com');
+		  ga('send', 'pageview');		
+		</script>
+	</body>
 </html>
