@@ -1,6 +1,8 @@
 <ul>
 	<?php $i=0; ?>
-        	<?php foreach ($users as $user): $i++; ?>
+	<?php foreach ($tweets as $tweet):  ?>
+        <?php $user = $tweet->getUser(); $i++; ?>
+        <?php //foreach ($users as $user): $i++; ?>
 	<li class="avatar bg<?php echo $i ?>"> 
 		<a data-toggle="modal" href="<?php echo url_for('oembed_tweet', array('twitter_guid' => $user->getTweetId())) ?>" data-target="#tweetModal">
 			<span>

@@ -16,4 +16,12 @@ class TweetTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Tweet');
     }
+    
+    public function findAllRandomly()
+    {
+    	$q = $this->createQuery('t')
+    		->orderBy('RAND()');
+    	
+    	return $q->execute();
+    }
 }

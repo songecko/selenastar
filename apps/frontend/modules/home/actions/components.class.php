@@ -28,6 +28,7 @@ class homeComponents extends sfComponents
 	
 	public function executeAlbum(sfWebRequest $request)
 	{
-		$this->users = sfGuardUserTable::getInstance()->getUsersWithTwitter();
+		$this->tweets = TweetTable::getInstance()->findAllRandomly();
+		//$this->users = sfGuardUserTable::getInstance()->getUsersWithTwitter();
 	}
 }
